@@ -1,0 +1,8 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/src/pages/words.json"],
+      "url": "/src/pages/words.schema.json"
+    }
+  ]
+}
