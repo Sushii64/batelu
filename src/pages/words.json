@@ -446,5 +446,357 @@
     "etymology": ["Hindi", ["दो", "do"], "two"],
     "type": "numeral",
     "date": "19-01-2026"
+  },
+  {
+    "word": "ena",
+    "definition": "(indefinite article)",
+    "ipa": "e.na",
+    "etymology": ["Greek", ["ένα", "ena"], "a"],
+    "type": "particle",
+    "date": "20-01-2026"
+  },
+  {
+    "word": "al",
+    "definition": "(definite article)",
+    "ipa": "al",
+    "etymology": ["Arabic", ["ال", "al"], "the"],
+    "type": "particle",
+    "date": "20-01-2026"
+  },
+  {
+    "word": "nimra",
+    "definition": "number, numeral",
+    "ipa": "nim.ra",
+    "etymology": ["Arabic", ["نمرة", "nimra"], "number"],
+    "type": "noun",
+    "date": "20-01-2026"
+  },
+  {
+    "word": "viwvaw",
+    "definition": "confusion, chaos",
+    "ipa": "viw.vaw",
+    "etymology": ["German", "Wirrwar", "confusion"],
+    "type": "noun",
+    "date": "20-01-2026"
+  },
+  {
+    "word": "shema",
+    "definition": "wax",
+    "ipa": "ʃe.ma",
+    "etymology": ["Maltese", "xema'", "wav"],
+    "type": "noun",
+    "date": "21-01-2026"
+  },
+  {
+    "word": "koja",
+    "definition": "goodbye",
+    "ipa": "ko.ja",
+    "etymology": false,
+    "type": "interjection",
+    "date": "21-01-2026"
+  },
+  {
+    "word": "odi",
+    "definition": "where",
+    "ipa": "o.di",
+    "etymology": ["Korean", ["어디", "eodi"], "where"],
+    "type": "particle",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "kamu",
+    "definition": "who",
+    "ipa": "ka.mu",
+    "etymology": ["Russian", ["кому", "komu"], "whom"],
+    "type": "particle",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "u",
+    "definition": "without, -less",
+    "ipa": "u",
+    "etymology": ["Cantonese", ["無", "mou4"], "to not have"],
+    "type": "modifier",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "mughre",
+    "definition": "dirt, filth",
+    "ipa": "muɣ.re",
+    "etymology": ["Spanish", "mugre", "dirt"],
+    "type": "noun",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "shan",
+    "definition": "three",
+    "ipa": "ʃan",
+    "etymology": ["Mandarin", ["三", "sān"], "three"],
+    "type": "numeral",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "fir",
+    "definition": "four",
+    "ipa": "fir",
+    "etymology": ["German", "fir", "four"],
+    "type": "numeral",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "krol",
+    "definition": "king",
+    "ipa": "krol",
+    "etymology": ["Polish", "król", "king"],
+    "type": "noun",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "khur",
+    "definition": "how",
+    "ipa": "xur",
+    "etymology": ["Swedish", "hur", "how"],
+    "type": "particle",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "myrti",
+    "definition": "dead",
+    "ipa": "mər.ti",
+    "etymology": ["Czech", "mrtvý", "dead"],
+    "type": "modifier",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "myrtire",
+    "definition": "to kill",
+    "ipa": "mər.ti.re",
+    "etymology": ["Czech", "mrtvý", "dead"],
+    "type": "verb",
+    "date": "22-01-2026"
+  },
+  {
+    "word": "deshol",
+    "definition": "sorry, excuse me",
+    "ipa": "de.ʃol",
+    "etymology": ["French", "désolé", "sorry"],
+    "type": "interjection",
+    "date": "23-01-2026"
+  },
+  {
+    "word": "pan",
+    "definition": "five",
+    "ipa": "pan",
+    "etymology": false,
+    "type": "numeral",
+    "date": "23-01-2026"
+  },
+  {
+    "word": "shashpi",
+    "definition": "seven",
+    "ipa": "ʃaʃ.pi",
+    "etymology": ["Basque", "saspi", "seven"],
+    "type": "numeral",
+    "date": "25-01-2026"
+  },
+  {
+    "word": "ejono",
+    "definition": "six",
+    "ipa": "e.jo.no",
+    "etymology": ["Hawaiian", "ʻeono", "six"],
+    "type": "numeral",
+    "date": "25-01-2026"
+  },
+  {
+    "word": "pohatta",
+    "definition": "tycoon, magnate",
+    "ipa": "po.hat.ta",
+    "etymology": ["Finnish", "pohatta", "tycoon"],
+    "type": "noun",
+    "date": "25-01-2026"
+  },
+  {
+    "word": "kilina",
+    "definition": "tingle, jingle",
+    "ipa": "ki.li.na",
+    "etymology": ["Finnish", "kilinä", "jingle"],
+    "type": "noun",
+    "date": "25-01-2026"
+  },
+  {
+    "word": "kilinare",
+    "definition": "to tingle, to jingle",
+    "ipa": "ki.li.na.re",
+    "etymology": ["Finnish", "kilinä", "jingle"],
+    "type": "verb",
+    "date": "25-01-2026"
+  },
+  {
+    "word": "tadmire",
+    "definition": "to destroy",
+    "ipa": "tad.mi.re",
+    "etymology": ["Arabic", ["تدمير", "tadmīr"], "destruction"],
+    "type": "verb",
+    "date": "25-01-2026"
+  },
+  {
+    "word": "falezh",
+    "definition": "precipice, crag",
+    "ipa": "fa.leʒ",
+    "etymology": ["French", "falaise", "cliff"],
+    "type": "noun",
+    "date": "26-01-2026"
+  },
+  {
+    "word": "shilvuple",
+    "definition": "please",
+    "ipa": "pa.wi",
+    "etymology": ["French", "s'il vous plaît", "please (formal)"],
+    "type": "interjection",
+    "date": "28-01-2026"
+  },
+  {
+    "word": "dajak",
+    "definition": "support, prop",
+    "ipa": "da.jak",
+    "etymology": ["Turkish", "dayak", "support"],
+    "type": "noun",
+    "date": "28-01-2026"
+  },
+  {
+    "word": "tsudak",
+    "definition": "eccentric, oddball",
+    "ipa": "tsu.dak",
+    "etymology": ["Russian", ["чудак", "chudak"], "oddball"],
+    "type": "noun",
+    "date": "29-01-2026"
+  },
+  {
+    "word": "ishtawa",
+    "definition": "romantic partner, boyfriend, girlfriend, husband, wife",
+    "ipa": "iʃ.ta.wa",
+    "etymology": ["Finnish", "ystävä", "-phile"],
+    "type": "noun",
+    "date": "29-01-2026"
+  },
+  {
+    "word": "shijaa",
+    "definition": "dark, dim",
+    "ipa": "ʃi.jaː",
+    "etymology": ["Persian", ["سیاه", "siyâh"], "black"],
+    "type": "modifier",
+    "date": "30-01-2026"
+  },
+  {
+    "word": "dzaalim",
+    "definition": "harsh, ruthless",
+    "ipa": "dʒaː.lim",
+    "etymology": ["Hindi", ["ज़ालिम", "zālim"], "cruel"],
+    "type": "modifier",
+    "date": "31-01-2026"
+  },
+  {
+    "word": "firme",
+    "definition": "reliable, secure",
+    "ipa": "fir.me",
+    "etymology": ["Spanish", "firme", "firm"],
+    "type": "modifier",
+    "date": "01-02-2026"
+  },
+  {
+    "word": "bishal",
+    "definition": "large, mighty",
+    "ipa": "bi.ʃal",
+    "etymology": ["Bengali", ["বিশাল", "biśal"], "huge"],
+    "type": "modifier",
+    "date": "02-02-2026"
+  },
+  {
+    "word": "fem",
+    "definition": "metal",
+    "ipa": "fem",
+    "etymology": ["Hungarian", "fém", "metal"],
+    "type": "noun",
+    "date": "05-02-2026"
+  },
+  {
+    "word": "tsuluk",
+    "definition": "cigar",
+    "ipa": "tsu.luk",
+    "etymology": ["Teochew", ["珠律", "zu1 lug8"], "cigar"],
+    "type": "noun",
+    "date": "06-02-2026"
+  },
+  {
+    "word": "ozdon",
+    "definition": "weight",
+    "ipa": "o.dʒon",
+    "etymology": ["Bengali", ["ওজন", "ōjon"], "weight"],
+    "type": "noun",
+    "date": "08-02-2026"
+  },
+  {
+    "word": "tsy",
+    "definition": "thorn, fishbone",
+    "ipa": "tsə",
+    "etymology": ["Mandarin", ["刺", "cì"], "to stab"],
+    "type": "noun",
+    "date": "09-02-2026"
+  },
+  {
+    "word": "mydosha",
+    "definition": "mallet, hammer",
+    "ipa": "mə.do.ʃa",
+    "etymology": ["Amharic", ["መዶሻ", "mädoša"], "hammer"],
+    "type": "noun",
+    "date": "11-02-2026"
+  },
+  {
+    "word": "esheesh",
+    "definition": "descend, fall",
+    "ipa": "e.ʃeːʃ",
+    "etymology": ["Hungarian", "esés", "fall"],
+    "type": "noun",
+    "date": "11-02-2026"
+  },
+  {
+    "word": "esheeshere",
+    "definition": "to descend, to fall",
+    "ipa": "e.ʃeː.ʃe.re",
+    "etymology": ["Hungarian", "esés", "fall"],
+    "type": "verb",
+    "date": "11-02-2026"
+  },
+  {
+    "word": "ewa",
+    "definition": "eight",
+    "ipa": "e.wa",
+    "etymology": ["Hawaiian", "ʻewalu", "eight"],
+    "type": "numeral",
+    "date": "12-02-2026"
+  },
+  {
+    "word": "meme",
+    "definition": "sheep, ram",
+    "ipa": "me.me",
+    "etymology": ["Kikongo", "dimeme", "sheep"],
+    "type": "noun",
+    "date": "12-02-2026"
+  },
+  {
+    "word": "naw",
+    "definition": "nine",
+    "ipa": "naw",
+    "etymology": ["Hindi", ["नौ", "nau"], "nine"],
+    "type": "numeral",
+    "date": "13-02-2026"
+  },
+  {
+    "word": "kaush",
+    "definition": "cheese",
+    "ipa": "ka.ush",
+    "etymology": ["Welsh", "caws", "cheese"],
+    "type": "noun",
+    "date": "13-02-2026"
   }
 ]
