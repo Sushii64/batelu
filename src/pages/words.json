@@ -1,0 +1,450 @@
+[
+  {
+    "word": "bakhen",
+    "definition": "language",
+    "ipa": "ba.xen",
+    "etymology": ["German", "Sprachen", "languages"],
+    "type": "noun",
+    "date": "07-05-2025"
+  },
+  {
+    "word": "wabi",
+    "definition": "fish, sea creature, marine animal",
+    "ipa": "wa.bi",
+    "etymology": false,
+    "type": "noun",
+    "date": "08-05-2025"
+  },
+  {
+    "word": "ludina",
+    "definition": "person, human being",
+    "ipa": "lu.di.na",
+    "etymology": ["Ukranian", ["людина", "lyudyna"], "person, man"],
+    "type": "noun",
+    "date": "08-05-2025"
+  },
+  {
+    "word": "tesha",
+    "definition": "want, wish, desire",
+    "ipa": "te.ʃa",
+    "etymology": ["Welsh", "eisiau", "want"],
+    "type": "noun",
+    "date": "11-05-2025"
+  },
+  {
+    "word": "tsol",
+    "definition": "soil, ground, earth",
+    "ipa": "t͡sol",
+    "etymology": ["French", "sol", "ground, soil"],
+    "type": "noun",
+    "date": "11-05-2025"
+  },
+  {
+    "word": "dzu",
+    "definition": "tree, bush, plant that bears fruit",
+    "ipa": "d͡ʒu",
+    "etymology": false,
+    "type": "noun",
+    "date": "13-05-2025"
+  },
+  {
+    "word": "kip",
+    "definition": "stone, rock",
+    "ipa": "kip",
+    "etymology": ["Afrikaans", "klip", "stone"],
+    "type": "noun",
+    "date": "14-05-2025"
+  },
+  {
+    "word": "teshare",
+    "definition": "to want, to desire",
+    "ipa": "te.ʃa.re",
+    "etymology": ["Welsh", "eisiau", "want"],
+    "type": "verb",
+    "date": "16-05-2025"
+  },
+  {
+    "word": "onore",
+    "definition": "to be",
+    "ipa": "o.no.re",
+    "etymology": ["Finnish", "on", "there is"],
+    "type": "verb",
+    "date": "18-05-2025"
+  },
+  {
+    "word": "katare",
+    "definition": "to communicate, to speak, to talk",
+    "ipa": "ka.ta.re",
+    "etymology": ["Japanese", ["語る", "kataru"], "speak"],
+    "type": "verb",
+    "date": "28-05-2025"
+  },
+  {
+    "word": "jeshere",
+    "definition": "to eat, to drink, to consume",
+    "ipa": "je.ʃe.re",
+    "etymology": ["Polish", "jeść", "eat"],
+    "type": "verb",
+    "date": "29-05-2025"
+  },
+  {
+    "word": "ko",
+    "definition": "[question particle]",
+    "ipa": "ko",
+    "etymology": ["Finnish", "ko"],
+    "type": "particle",
+    "date": "31-05-2025"
+  },
+  {
+    "word": "languren",
+    "definition": "anthropomorphic animal, furry or relating to the furry fandom",
+    "ipa": "lan.gu.ren",
+    "etymology": ["Mandarin Chinese", ["狼人", "lángrén"], "werewolf"],
+    "type": "noun",
+    "date": "09-06-2025"
+  },
+  {
+    "word": "vi",
+    "definition": "air, wind, sky",
+    "ipa": "vi",
+    "etymology": false,
+    "type": "noun",
+    "date": "21-06-2025"
+  },
+  {
+    "word": "poghu",
+    "definition": "ability, capability",
+    "ipa": "po.ɣu",
+    "etymology": ["Catalan", "poguer", "to be able to"],
+    "type": "noun",
+    "date": "23-06-2025"
+  },
+  {
+    "word": "poghure",
+    "definition": "to be able to",
+    "ipa": "po.ɣu.re",
+    "etymology": ["Catalan", "poguer", "to be able to"],
+    "type": "verb",
+    "date": "23-06-2025"
+  },
+  {
+    "word": "citsujo",
+    "definition": "need, requirement, something necessary",
+    "ipa": "çi.t͡su.jo",
+    "etymology": ["Japanese", ["必用", "hitsuyō"], "need"],
+    "type": "noun",
+    "date": "23-06-2025"
+  },
+  {
+    "word": "citsujore",
+    "definition": "to need, to require",
+    "ipa": "çi.t͡su.jo.re",
+    "etymology": ["Japanese", ["必用", "hitsuyō"], "need"],
+    "type": "verb",
+    "date": "23-06-2025"
+  },
+  {
+    "word": "liosh",
+    "definition": "light, light source, glow, brightness",
+    "ipa": "li.oʃ",
+    "etymology": ["Faroese", "ljós", "light"],
+    "type": "noun",
+    "date": "29-06-2025"
+  },
+  {
+    "word": "wakta",
+    "definition": "time",
+    "ipa": "wak.ta",
+    "etymology": ["Arabic", ["وقت", "waqt"], "time"],
+    "type": "noun",
+    "date": "23-09-2025"
+  },
+  {
+    "word": "tote",
+    "definition": "all, everything",
+    "ipa": "to.te",
+    "etymology": ["Romanian", "toate", "all"],
+    "type": "noun",
+    "date": "23-09-2025"
+  },
+  {
+    "word": "shego",
+    "definition": "second (time)",
+    "ipa": "ʃe.go",
+    "etymology": ["Spanish", "segundo", "second"],
+    "type": "noun",
+    "date": "28-09-2025"
+  },
+  {
+    "word": "kurva",
+    "definition": "(UNFINISHED) some sort of sex related word",
+    "ipa": "kur.va",
+    "etymology": ["Polish", "kurwa", "bitch, whore"],
+    "type": "noun",
+    "date": "09-10-2025"
+  },
+  {
+    "word": "karka",
+    "definition": "(vulgar) fuck, shit, other vulgar interjections",
+    "ipa": "kar.ka",
+    "etymology": false,
+    "type": "interjection",
+    "date": "09-10-2025"
+  },
+  {
+    "word": "ryvol",
+    "definition": "curve, bend, turn",
+    "ipa": "rə.vol",
+    "etymology": ["Catalan", "revolt", "turn around"],
+    "type": "noun",
+    "date": "09-10-2025"
+  },
+  {
+    "word": "neje",
+    "definition": "close, nearby, in the vicinity",
+    "ipa": "ne.je",
+    "etymology": ["German", "Nähe", "vicinity"],
+    "type": "modifier",
+    "date": "10-10-2025"
+  },
+  {
+    "word": "bun",
+    "definition": "minute (time)",
+    "ipa": "bun",
+    "etymology": ["Japanese", ["分", "bun"], "minute"],
+    "type": "noun",
+    "date": "11-10-2025"
+  },
+  {
+    "word": "shat",
+    "definition": "hour (time)",
+    "ipa": "ʃat",
+    "etymology": ["Croatian", "sat", "hour"],
+    "type": "noun",
+    "date": "20-10-2025"
+  },
+  {
+    "word": "khuga",
+    "definition": "game",
+    "ipa": "xu.ga",
+    "etymology": ["Spanish", "jugar", "to play"],
+    "type": "noun",
+    "date": "04-01-2026"
+  },
+  {
+    "word": "khugare",
+    "definition": "to play",
+    "ipa": "xu.ga.re",
+    "etymology": ["Spanish", "jugar", "to play"],
+    "type": "verb",
+    "date": "04-01-2026"
+  },
+  {
+    "word": "buf",
+    "definition": "food",
+    "ipa": "buf",
+    "etymology": ["French", "bouffe", "food"],
+    "type": "noun",
+    "date": "04-01-2026"
+  },
+  {
+    "word": "bon",
+    "definition": "good",
+    "ipa": "bon",
+    "etymology": ["French", "bonne", "good"],
+    "type": "modifier",
+    "date": "04-01-2026"
+  },
+  {
+    "word": "mawyr",
+    "definition": "cat",
+    "ipa": "ma.wər",
+    "etymology": ["Mandarin Chinese", ["猫儿", "māor"], "cat"],
+    "type": "noun",
+    "date": "05-01-2026"
+  },
+  {
+    "word": "shini",
+    "definition": "true, real, existing",
+    "ipa": "ʃi.ni",
+    "etymology": ["Russian", ["истинный", "istinnyy"], "true"],
+    "type": "modifier",
+    "date": "05-01-2026"
+  },
+  {
+    "word": "citami",
+    "definition": "pain",
+    "ipa": "çi.ta.mi",
+    "etymology": ["Japanese", ["痛み", "itami"], "pain"],
+    "type": "noun",
+    "date": "05-01-2026"
+  },
+  {
+    "word": "shoj",
+    "definition": "water",
+    "ipa": "ʃoj",
+    "etymology": ["Cantonese", ["水", "seoi2"], "water"],
+    "type": "noun",
+    "date": "05-01-2026"
+  },
+  {
+    "word": "dija",
+    "definition": "day (measure of time)",
+    "ipa": "di.ja",
+    "etymology": ["Spanish", "dia", "day"],
+    "type": "noun",
+    "date": "05-01-2026"
+  },
+  {
+    "word": "dijabon",
+    "definition": "hello, greetings, (literally) good day",
+    "ipa": "di.ja.bon",
+    "etymology": ["Batelu", "dija bon", "good day"],
+    "type": "interjection",
+    "date": "05-01-2026"
+  },
+  {
+    "word": "kaban",
+    "definition": "bed",
+    "ipa": "ka.ban",
+    "etymology": ["Haitian Creole", "kabann", "bed"],
+    "type": "noun",
+    "date": "07-01-2026"
+  },
+  {
+    "word": "kabanare",
+    "definition": "to sleep, to rest",
+    "ipa": "ka.ba.na.re",
+    "etymology": ["Batelu", "kaban", "bed"],
+    "type": "verb",
+    "date": "07-01-2026"
+  },
+  {
+    "word": "maku",
+    "definition": "mother",
+    "ipa": "ma.ku",
+    "etymology": ["Hawaiian", "makuahine", "mother"],
+    "type": "noun",
+    "date": "07-01-2026"
+  },
+  {
+    "word": "nezh",
+    "definition": "snow",
+    "ipa": "neʒ",
+    "etymology": ["Hawaiian", "makuahine", "mother"],
+    "type": "noun",
+    "date": "07-01-2026"
+  },
+  {
+    "word": "khefyl",
+    "definition": "drug, medicine",
+    "ipa": "xe.fəl",
+    "etymology": ["Proto-Indo-European", "*h₂ébōl", "apple"],
+    "type": "noun",
+    "date": "14-01-2026"
+  },
+  {
+    "word": "wanija",
+    "definition": "unstable, moving unnaturally, jittery",
+    "ipa": "wa.ni.ja",
+    "etymology": ["Old English", "wandrian", "to wander"],
+    "type": "modifier",
+    "date": "14-01-2026"
+  },
+  {
+    "word": "wanijare",
+    "definition": "to jitter, to shake, to move unnaturally",
+    "ipa": "wa.ni.ja.re",
+    "etymology": ["Batelu", "wanija", "unstable"],
+    "type": "verb",
+    "date": "14-01-2026"
+  },
+  {
+    "word": "pentu",
+    "definition": "pencil, pen, (physical) writing device",
+    "ipa": "pen.tu",
+    "etymology": ["English", "pencil"],
+    "type": "noun",
+    "date": "16-01-2026"
+  },
+  {
+    "word": "va",
+    "definition": "what, which",
+    "ipa": "va",
+    "etymology": ["Norwegian", "hva", "what"],
+    "type": "modifier",
+    "date": "16-01-2026"
+  },
+  {
+    "word": "va2",
+    "definition": "(placeholder for missing info), what",
+    "ipa": "va",
+    "etymology": ["Norwegian", "hva", "what"],
+    "type": "particle",
+    "date": "16-01-2026"
+  },
+  {
+    "word": "mesi",
+    "definition": "thank you",
+    "ipa": "me.si",
+    "etymology": ["French", "merci", "thank you"],
+    "type": "interjection",
+    "date": "17-01-2026"
+  },
+  {
+    "word": "byr",
+    "definition": "no, not, (negation word)",
+    "ipa": "bər",
+    "etymology": ["Serbian", "бр", "no"],
+    "type": "modifier",
+    "date": "17-01-2026"
+  },
+  {
+    "word": "ori",
+    "definition": "this, that, (reflexive pronoun)",
+    "ipa": "o.ri",
+    "etymology": ["Basque", "hori", "that"],
+    "type": "modifier",
+    "date": "18-01-2026"
+  },
+  {
+    "word": "citamire",
+    "definition": "to hurt, to harm, to damage",
+    "ipa": "çi.ta.mi.re",
+    "etymology": ["Batelu", "citami", "pain"],
+    "type": "verb",
+    "date": "18-01-2026"
+  },
+  {
+    "word": "bandzi",
+    "definition": "wide",
+    "ipa": "ban.dʒi",
+    "etymology": ["Zulu", "banzi", "wide"],
+    "type": "modifier",
+    "date": "18-01-2026"
+  },
+  {
+    "word": "ad",
+    "definition": "one",
+    "ipa": "ad",
+    "etymology": ["Hebrew", ["אֶחָד", "ahad"], "one"],
+    "type": "numeral",
+    "date": "18-01-2026"
+  },
+  {
+    "word": "ej",
+    "definition": "(vocative particle, before noun)",
+    "ipa": "ej",
+    "etymology": ["Ukranian", ["ей", "ey"], "hey"],
+    "type": "particle",
+    "date": "19-01-2026"
+  },
+  {
+    "word": "do",
+    "definition": "two",
+    "ipa": "do",
+    "etymology": ["Hindi", ["दो", "do"], "two"],
+    "type": "numeral",
+    "date": "19-01-2026"
+  }
+]

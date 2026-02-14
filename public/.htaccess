@@ -1,0 +1,17 @@
+# .htaccess for single-page app routing (Apache)
+Options -MultiViews
+
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve existing files or directories as-is
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Otherwise, serve the SPA
+  RewriteRule ^ index.html [L]
+</IfModule>
