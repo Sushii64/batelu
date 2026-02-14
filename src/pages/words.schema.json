@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "word": {
+        "type": "string",
+        "description": "The word in Batelu."
+      },
+      "definition": {
+        "type": "string",
+        "description": "The word's meaning in English."
+      },
+      "ipa": {
+        "type": "string",
+        "description": "The word's phonemic transcription in the IPA."
+      },
+      "etymology": {
+        "oneOf": [
+          { "enum": [false] },
+          {
+            "type": "array",
+            "prefixItems": [
+              { "type": "string" },
+              {
+                "oneOf": [
+                  { "type": "string" },
+                  {
+                    "type": "array",
+                    "prefixItems": [{ "type": "string" }, { "type": "string" }]
+                  }
+                ]
+              },
+              { "type": "string" }
+            ]
+          }
+        ],
+        "description": "The word's etymology.\nIn the format of [\"Language\", [\"word\", \"transcription\"], \"meaning\"].\nIf the language already uses the Latin script, the format is [\"Language\", \"word\", \"meaning\"].\nIf the word is a priori, use false."
+      },
+      "type": {
+        "enum": [
+          "noun",
+          "verb",
+          "particle",
+          "interjection",
+          "modifier",
+          "numeral"
+        ],
+        "description": "The part of speech of the word."
+      },
+      "date": {
+        "type": "string",
+        "pattern": "^\\d\\d-\\d\\d-\\d\\d\\d\\d$",
+        "description": "The date the word's poll closed, after all tiebreakers.\nIn DD-MM-YYYY format."
+      }
+    },
+    "required": ["word", "definition", "ipa", "etymology", "type", "date"],
+    "additionalProperties": false
+  }
+}
