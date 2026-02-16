@@ -650,7 +650,7 @@
   {
     "word": "shilvuple",
     "definition": "please",
-    "ipa": "pa.wi",
+    "ipa": "ʃil.vup.le",
     "etymology": ["French", "s'il vous plaît", "please (formal)"],
     "type": "interjection",
     "date": "28-01-2026"
@@ -794,9 +794,33 @@
   {
     "word": "kaush",
     "definition": "cheese",
-    "ipa": "ka.ush",
+    "ipa": "ka.uʃ",
     "etymology": ["Welsh", "caws", "cheese"],
     "type": "noun",
     "date": "13-02-2026"
+  },
+  {
+    "word": "pablere",
+    "definition": "to change",
+    "ipa": "pab.le.re",
+    "etymology": ["Selsimicu", "pabēl", "to change"],
+    "type": "verb",
+    "date": "14-02-2026"
+  },
+  {
+    "word": "mempaw",
+    "definition": "sandwich",
+    "ipa": "mem.paw",
+    "etymology": ["Mandarin", ["面包", "miànbāo"], "bread"],
+    "type": "noun",
+    "date": "14-02-2026"
+  },
+  {
+    "word": "kaushmempaw",
+    "definition": "cheeseburger",
+    "ipa": "ka.uʃ.mem.paw",
+    "etymology": ["Batelu", "kaush mempaw", "cheese sandwich"],
+    "type": "noun",
+    "date": "14-02-2026"
   }
 ]
