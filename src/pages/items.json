@@ -51,5 +51,7 @@
   { "description": "Double consonants (e.g. katta) are allowed and pronounced as if there was only one", "tags":  ["consonants", "repetition", "phonology"]},
   { "description": "Duodecimal number system (base-12)", "tags":  ["number system", "grammar"]},
   { "description": "Nouns can be turned into separate verbs at the discretion of the maintainer", "tags":  ["nouns", "verbs"]},
-  { "description": "Separation between exclusive and inclusive 'we'", "tags":  ["grammar", "pronouns"]}
+  { "description": "Separation between exclusive and inclusive 'we'", "tags":  ["grammar", "pronouns"]},
+  { "description": "Only prepositions, no postpositions", "tags": ["grammar", "prepositions"]},
+  { "description": "Preposition phrases go after the noun phrase or verb they modify", "tags": ["grammar", "prepositions"]}
 ]
