@@ -822,5 +822,37 @@
     "etymology": ["Batelu", "kaush mempaw", "cheese sandwich"],
     "type": "noun",
     "date": "15-02-2026"
+  },
+  {
+    "word": "vatsoj",
+    "definition": "still, unmoving",
+    "ipa": "va.tsoj",
+    "etymology": ["Bulgarian", ["в застой", "v zatsoj"], "at a standstill"],
+    "type": "modifier",
+    "date": "17-02-2026"
+  },
+  {
+    "word": "je",
+    "definition": "at, in (location, environment)",
+    "ipa": "je",
+    "etymology": ["Norwegian", "miljø", "environment"],
+    "type": "adposition",
+    "date": "18-02-2026"
+  },
+  {
+    "word": "wan",
+    "definition": "ten",
+    "ipa": "wan",
+    "etymology": ["Ainu", ["ワン", "wan"], "ten"],
+    "type": "numeral",
+    "date": "18-02-2026"
+  },
+  {
+    "word": "awi",
+    "definition": "eleven",
+    "ipa": "a.wi",
+    "etymology": ["Cherokee", ["ᏌᏚᎢ", "sadui"], "eleven"],
+    "type": "numeral",
+    "date": "18-02-2026"
   }
 ]
