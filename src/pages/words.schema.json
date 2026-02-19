@@ -45,7 +45,8 @@
           "particle",
           "interjection",
           "modifier",
-          "numeral"
+          "numeral",
+          "adposition"
         ],
         "description": "The part of speech of the word."
       },

@@ -1,110 +1,117 @@
 <script>
-  import wordsData from './words.json';
-  
-  const cleanWord = (w) => w.replace(/\d+$/, '');
-  
+  import wordsData from "./words.json";
+
+  const cleanWord = (w) => w.replace(/\d+$/, "");
+
   let words = wordsData.map((w, index) => ({
     ...w,
     displayWord: cleanWord(w.word),
-    index
-      }));
+    index,
+  }));
 
-      import { tick, onMount } from 'svelte';
+  import { tick, onMount } from "svelte";
 
-          let q = '';
-          let sortBy = 'alphabetical';
-          let selected = null;
-          let drawerEl;
-          let initialized = false;
+  let q = "";
+  let sortBy = "alphabetical";
+  let selected = null;
+  let drawerEl;
+  let initialized = false;
 
-          onMount(() => {
-            const params = new URLSearchParams(window.location.search);
-            if (params.has('q')) q = params.get('q');
-            if (params.has('sort')) sortBy = params.get('sort');
+  onMount(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("q")) q = params.get("q");
+    if (params.has("sort")) sortBy = params.get("sort");
 
-            if (params.has('word')) {
-              const w = words.find(item => item.word === params.get('word'));
-              if (w) selected = w;
-            }
-            initialized = true;
-          });
+    if (params.has("word")) {
+      const w = words.find((item) => item.word === params.get("word"));
+      if (w) selected = w;
+    }
+    initialized = true;
+  });
 
-          // Update URL when search, sort, or selection changes
-          $: {
-            if (initialized && typeof window !== 'undefined') {
-              const url = new URL(window.location.href);
-              if (q.trim()) url.searchParams.set('q', q.trim());
-              else url.searchParams.delete('q');
+  // Update URL when search, sort, or selection changes
+  $: {
+    if (initialized && typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      if (q.trim()) url.searchParams.set("q", q.trim());
+      else url.searchParams.delete("q");
 
-              if (sortBy !== 'alphabetical') url.searchParams.set('sort', sortBy);
-              else url.searchParams.delete('sort');
+      if (sortBy !== "alphabetical") url.searchParams.set("sort", sortBy);
+      else url.searchParams.delete("sort");
 
-              if (selected) url.searchParams.set('word', selected.word);
-              else url.searchParams.delete('word');
+      if (selected) url.searchParams.set("word", selected.word);
+      else url.searchParams.delete("word");
 
-              window.history.replaceState({}, '', url.toString());
-            }
-          }
+      window.history.replaceState({}, "", url.toString());
+    }
+  }
 
-      const parseDate = (d) => {
+  const parseDate = (d) => {
     if (!d) return 0;
-    const [day, month, year] = d.split('-').map(Number);
+    const [day, month, year] = d.split("-").map(Number);
     return new Date(year, month - 1, day).getTime();
   };
 
   const formatDate = (d) => {
-    if (!d) return '';
-    const [day, month, year] = d.split('-').map(Number);
+    if (!d) return "";
+    const [day, month, year] = d.split("-").map(Number);
     const date = new Date(year, month - 1, day);
-    return date.toLocaleDateString('en-GB', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
+    return date.toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
     });
   };
 
   $: normalized = q.trim().toLowerCase();
   $: filtered = normalized
-    ? words.filter(w =>
-        w.displayWord.toLowerCase().includes(normalized) ||
-        (w.definition && w.definition.toLowerCase().includes(normalized))
+    ? words.filter(
+        (w) =>
+          w.displayWord.toLowerCase().includes(normalized) ||
+          (w.definition && w.definition.toLowerCase().includes(normalized)),
       )
     : words;
   $: sorted = (() => {
     const copy = [...filtered];
     switch (sortBy) {
-      case 'alphabetical':
+      case "alphabetical":
         return copy.sort((a, b) => a.displayWord.localeCompare(b.displayWord));
-      case 'reverse':
+      case "reverse":
         return copy.sort((a, b) => b.displayWord.localeCompare(a.displayWord));
-      case 'newest':
+      case "newest":
         return copy.sort((a, b) => {
           const dateA = parseDate(a.date);
           const dateB = parseDate(b.date);
           if (dateB !== dateA) return dateB - dateA;
           return b.index - a.index;
         });
-      case 'oldest':
+      case "oldest":
         return copy.sort((a, b) => {
           const dateA = parseDate(a.date);
           const dateB = parseDate(b.date);
           if (dateA !== dateB) return dateA - dateB;
           return a.index - b.index;
         });
-      case 'type':
+      case "type":
         return copy.sort((a, b) => {
           const typeCompare = a.type.localeCompare(b.type);
-          return typeCompare !== 0 ? typeCompare : a.displayWord.localeCompare(b.displayWord);
+          return typeCompare !== 0
+            ? typeCompare
+            : a.displayWord.localeCompare(b.displayWord);
         });
-      case 'length-short':
+      case "length-short":
         return copy.sort((a, b) => {
           const lengthCompare = a.displayWord.length - b.displayWord.length;
-          return lengthCompare !== 0 ? lengthCompare : a.displayWord.localeCompare(b.displayWord);
+          return lengthCompare !== 0
+            ? lengthCompare
+            : a.displayWord.localeCompare(b.displayWord);
         });
-      case 'length-long':
+      case "length-long":
         return copy.sort((a, b) => {
           const lengthCompare = b.displayWord.length - a.displayWord.length;
-          return lengthCompare !== 0 ? lengthCompare : a.displayWord.localeCompare(b.displayWord);
+          return lengthCompare !== 0
+            ? lengthCompare
+            : a.displayWord.localeCompare(b.displayWord);
         });
       default:
         return copy;
@@ -120,19 +127,21 @@
     selected = null;
   }
   function onCardKeydown(e, w) {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       open(w);
     }
   }
   function onWindowKeydown(e) {
-    if (e.key === 'Escape') {
+    if (e.key === "Escape") {
       close();
     }
   }
 
   // Prevent background scroll when drawer is open
-  $: (document && document.body) && (document.body.style.overflow = selected ? 'hidden' : '');
+  $: document &&
+    document.body &&
+    (document.body.style.overflow = selected ? "hidden" : "");
 </script>
 
 <svelte:window on:keydown={onWindowKeydown} />
@@ -170,27 +179,28 @@
   </div>
 </main>
 <section class="cards-wrap">
-  <div id="word-grid" class="grid" role="list"> <!-- optionally add grid-scroll -->
+  <div id="word-grid" class="grid" role="list">
+    <!-- optionally add grid-scroll -->
     {#if sorted.length === 0}
       <div class="empty">No matches. Try a different search.</div>
     {:else}
       {#each sorted as w (w.word)}
         <div
-           class="card"
-           role="listitem"
-           tabindex="0"
-           aria-label={`Word ${w.displayWord}`}
-           aria-controls="word-panel"
-           on:click={() => open(w)}
-           on:keydown={(e) => onCardKeydown(e, w)}
-         >
-           <div class="accent accent-{w.type}" aria-hidden="true"></div>
-           <header class="title">{w.displayWord}</header>
-           {#if w.definition}
-             <p class="definition">
-               ({w.type === 'numeral' ? '#' : w.type[0]}) {w.definition}
-             </p>
-           {/if}
+          class="card"
+          role="listitem"
+          tabindex="0"
+          aria-label={`Word ${w.displayWord}`}
+          aria-controls="word-panel"
+          on:click={() => open(w)}
+          on:keydown={(e) => onCardKeydown(e, w)}
+        >
+          <div class="accent accent-{w.type}" aria-hidden="true"></div>
+          <header class="title">{w.displayWord}</header>
+          {#if w.definition}
+            <p class="definition">
+              ({w.type === "numeral" ? "#" : w.type[0]}) {w.definition}
+            </p>
+          {/if}
         </div>
       {/each}
     {/if}
@@ -211,7 +221,9 @@
     <div class="drawer-handle" aria-hidden="true"></div>
     <header class="drawer-header">
       <h2 id="panel-title">{selected.displayWord}</h2>
-      <button class="close" on:click={close} aria-label="Close details">×</button>
+      <button class="close" on:click={close} aria-label="Close details"
+        >×</button
+      >
     </header>
     <section class="drawer-body">
       <div class="detail-display">
@@ -231,8 +243,9 @@
               <p class="detail-text">
                 <span class="ety-lang">{selected.etymology[0]}</span>
                 <em class="ety-word">{selected.etymology[1][0]}</em>
-                (<span class="ety-roman">{selected.etymology[1][1]}</span>)
-                "<span class="ety-gloss">{selected.etymology[2]}</span>"
+                (<span class="ety-roman">{selected.etymology[1][1]}</span>) "<span
+                  class="ety-gloss">{selected.etymology[2]}</span
+                >"
               </p>
             {:else}
               <p class="detail-text">
@@ -241,19 +254,17 @@
                 (<span class="ety-roman">{selected.etymology[1][1]}</span>)
               </p>
             {/if}
+          {:else if selected.etymology.length > 2 && selected.etymology[2]}
+            <p class="detail-text">
+              <span class="ety-lang">{selected.etymology[0]}</span>
+              <em class="ety-word">{selected.etymology[1]}</em>
+              "<span class="ety-gloss">{selected.etymology[2]}</span>"
+            </p>
           {:else}
-            {#if selected.etymology.length > 2 && selected.etymology[2]}
-              <p class="detail-text">
-                <span class="ety-lang">{selected.etymology[0]}</span>
-                <em class="ety-word">{selected.etymology[1]}</em>
-                "<span class="ety-gloss">{selected.etymology[2]}</span>"
-              </p>
-            {:else}
-              <p class="detail-text">
-                <span class="ety-lang">{selected.etymology[0]}</span>
-                <em class="ety-word">{selected.etymology[1]}</em>
-              </p>
-            {/if}
+            <p class="detail-text">
+              <span class="ety-lang">{selected.etymology[0]}</span>
+              <em class="ety-word">{selected.etymology[1]}</em>
+            </p>
           {/if}
         {:else}
           <p class="detail-text">{selected.etymology}</p>
@@ -280,13 +291,15 @@
 
   .search input {
     padding: 0.75rem 1rem;
-    min-height: 44px;               /* consistent height with count */
+    min-height: 44px; /* consistent height with count */
     border-radius: 12px;
     background: #0f0f0f;
     border: 1px solid var(--border);
     color: var(--fg);
     outline: none;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    transition:
+      border-color 0.15s ease,
+      box-shadow 0.15s ease;
   }
 
   .search input:focus {
@@ -296,16 +309,16 @@
 
   .search .count {
     min-width: 2.6rem;
-    height: 44px;                   /* match input height */
+    height: 44px; /* match input height */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0 0.7rem;              /* horizontal padding only */
+    padding: 0 0.7rem; /* horizontal padding only */
     border: 1px solid var(--border);
     border-radius: 10px;
     color: var(--muted);
     background: #0f0f0f;
-    line-height: 1;                 /* avoid vertical offset */
+    line-height: 1; /* avoid vertical offset */
   }
 
   /* Sort control */
@@ -330,7 +343,9 @@
     color: var(--fg);
     outline: none;
     cursor: pointer;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    transition:
+      border-color 0.15s ease,
+      box-shadow 0.15s ease;
     font-size: 0.95rem;
   }
 
@@ -389,14 +404,17 @@
 
     border: 1px solid var(--border);
     border-radius: 14px;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 40%),
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.03),
+        transparent 40%
+      ),
       #101010;
     padding: 0.8rem 0.9rem;
 
     box-shadow:
       0 1px 0 rgba(255, 255, 255, 0.03) inset,
-      0 8px 20px rgba(0, 0, 0, 0.20);
+      0 8px 20px rgba(0, 0, 0, 0.2);
     transition:
       transform 120ms ease,
       border-color 160ms ease,
@@ -427,6 +445,7 @@
     --accent-particle: color-mix(in srgb, #8052ff 90%, #fff 0%);
     --accent-numeral: #ffcc33;
     --accent-interjection: color-mix(in srgb, #fff652 90%, #fff 0%);
+    --accent-adposition: color-mix(in srgb, #ff52e2 90%, #fff 0%);
   }
 
   .card .accent.accent-noun {
@@ -451,6 +470,10 @@
 
   .card .accent.accent-interjection {
     background: color-mix(in srgb, var(--accent-interjection) 90%, #fff 0%);
+  }
+
+  .card .accent.accent-adposition {
+    background: color-mix(in srgb, var(--accent-adposition) 90%, #fff 0%);
   }
 
   .card:hover,
@@ -495,13 +518,25 @@
 
   /* Keyframes (top-level for compatibility) */
   @keyframes popIn {
-    from { transform: translate(-50%, calc(-50% + 14px)); opacity: 0; }
-    to { transform: translate(-50%, -50%); opacity: 1; }
+    from {
+      transform: translate(-50%, calc(-50% + 14px));
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
   }
 
   @keyframes slideUp {
-    from { transform: translateX(-50%) translateY(18px); opacity: 0; }
-    to { transform: translateX(-50%) translateY(0); opacity: 1; }
+    from {
+      transform: translateX(-50%) translateY(18px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
   }
 
   /* Details panel: default = centered popup (desktop/tablet) */
@@ -523,8 +558,8 @@
     display: grid;
     grid-template-rows: auto 1fr;
     padding: 1rem 1.2rem 1.2rem;
-    box-sizing: border-box;            /* prevent layout overflow */
-    overflow: hidden;                  /* clip internals (no horiz scroll) */
+    box-sizing: border-box; /* prevent layout overflow */
+    overflow: hidden; /* clip internals (no horiz scroll) */
     animation: popIn 160ms ease-out;
   }
 
@@ -558,12 +593,12 @@
   }
 
   .drawer-body {
-    overflow-y: auto;                  /* scroll vertically when needed */
-    overflow-x: hidden;                /* never scroll horizontally */
+    overflow-y: auto; /* scroll vertically when needed */
+    overflow-x: hidden; /* never scroll horizontally */
     margin-top: 0.25rem;
     -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
-    overflow-wrap: anywhere;           /* avoid horizontal overflow from long text */
-    padding-right: 2px;               /* ensure scrollbar doesn't overlap text */
+    overflow-wrap: anywhere; /* avoid horizontal overflow from long text */
+    padding-right: 2px; /* ensure scrollbar doesn't overlap text */
   }
 
   .meta-row {
@@ -596,7 +631,15 @@
   }
 
   .detail-word {
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family:
+      system-ui,
+      -apple-system,
+      Segoe UI,
+      Roboto,
+      Helvetica,
+      Arial,
+      "Apple Color Emoji",
+      "Segoe UI Emoji";
     font-weight: 800;
     font-size: clamp(2.4rem, 6vw, 3.6rem);
     line-height: 1.08;
@@ -634,10 +677,18 @@
   }
 
   /* Etymology accents */
-  .ety-lang { font-weight: 700; }
-  .ety-word { font-style: italic; }
-  .ety-roman { opacity: 0.95; }
-  .ety-gloss { opacity: 0.92; }
+  .ety-lang {
+    font-weight: 700;
+  }
+  .ety-word {
+    font-style: italic;
+  }
+  .ety-roman {
+    opacity: 0.95;
+  }
+  .ety-gloss {
+    opacity: 0.92;
+  }
 
   /* Outlined box specifically for the definition content */
   .def-box {
@@ -656,10 +707,10 @@
       gap: 0.5rem;
     }
     .search input {
-      min-height: 48px;           /* larger touch target on mobile */
+      min-height: 48px; /* larger touch target on mobile */
     }
     .search .count {
-      height: 48px;               /* match input */
+      height: 48px; /* match input */
       min-width: 2.8rem;
     }
 

@@ -650,7 +650,7 @@
   {
     "word": "shilvuple",
     "definition": "please",
-    "ipa": "pa.wi",
+    "ipa": "ʃil.vup.le",
     "etymology": ["French", "s'il vous plaît", "please (formal)"],
     "type": "interjection",
     "date": "28-01-2026"
@@ -794,9 +794,65 @@
   {
     "word": "kaush",
     "definition": "cheese",
-    "ipa": "ka.ush",
+    "ipa": "ka.uʃ",
     "etymology": ["Welsh", "caws", "cheese"],
     "type": "noun",
     "date": "13-02-2026"
+  },
+  {
+    "word": "pablere",
+    "definition": "to change",
+    "ipa": "pab.le.re",
+    "etymology": ["Selsimicu", "pabēl", "to change"],
+    "type": "verb",
+    "date": "15-02-2026"
+  },
+  {
+    "word": "mempaw",
+    "definition": "sandwich",
+    "ipa": "mem.paw",
+    "etymology": ["Mandarin", ["面包", "miànbāo"], "bread"],
+    "type": "noun",
+    "date": "15-02-2026"
+  },
+  {
+    "word": "kaushmempaw",
+    "definition": "cheeseburger",
+    "ipa": "ka.uʃ.mem.paw",
+    "etymology": ["Batelu", "kaush mempaw", "cheese sandwich"],
+    "type": "noun",
+    "date": "15-02-2026"
+  },
+  {
+    "word": "vatsoj",
+    "definition": "still, unmoving",
+    "ipa": "va.tsoj",
+    "etymology": ["Bulgarian", ["в застой", "v zatsoj"], "at a standstill"],
+    "type": "modifier",
+    "date": "17-02-2026"
+  },
+  {
+    "word": "je",
+    "definition": "at, in (location, environment)",
+    "ipa": "je",
+    "etymology": ["Norwegian", "miljø", "environment"],
+    "type": "adposition",
+    "date": "18-02-2026"
+  },
+  {
+    "word": "wan",
+    "definition": "ten",
+    "ipa": "wan",
+    "etymology": ["Ainu", ["ワン", "wan"], "ten"],
+    "type": "numeral",
+    "date": "18-02-2026"
+  },
+  {
+    "word": "awi",
+    "definition": "eleven",
+    "ipa": "a.wi",
+    "etymology": ["Cherokee", ["ᏌᏚᎢ", "sadui"], "eleven"],
+    "type": "numeral",
+    "date": "18-02-2026"
   }
 ]
