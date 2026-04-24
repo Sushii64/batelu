@@ -795,10 +795,10 @@
               <b>4th Person</b>
             </td>
             <td class="horizontal-header"><b>Animate</b></td>
-            <td class="inflections-secondary">(no word yet)</td>
-            <td class="inflections-secondary">(no word yet)</td>
-            <td class="inflections-secondary">(no word yet)</td>
-            <td class="inflections-secondary">(no word yet)</td>
+            <td>nu</td>
+            <td>numi</td>
+            <td>cunu</td>
+            <td>cunumi</td>
           </tr>
           <tr>
             <td class="horizontal-header"><b>Inanimate</b></td>
