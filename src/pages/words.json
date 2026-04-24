@@ -289,7 +289,7 @@
   },
   {
     "word": "maku",
-    "definition": "mother",
+    "definition": "parent, mother, father",
     "etymology": ["Hawaiian", "makuahine", "mother"],
     "type": "noun",
     "date": "07-01-2026"
@@ -548,14 +548,14 @@
   },
   {
     "word": "kilina",
-    "definition": "tingle, jingle",
+    "definition": "tingle, jingle, notification",
     "etymology": ["Finnish", "kilinä", "jingle"],
     "type": "noun",
     "date": "25-01-2026"
   },
   {
     "word": "kilinare",
-    "definition": "to tingle, to jingle",
+    "definition": "to tingle, to jingle, to notify",
     "etymology": ["Batelu", "kilina"],
     "type": "verb",
     "date": "25-01-2026"
@@ -1813,5 +1813,54 @@
     "etymology": ["Sanskrit", ["टङ्का", "ṭaṅkā"], "leg"],
     "type": "noun",
     "date": "22-04-2026"
+  },
+  {
+    "word": "goxan",
+    "definition": "rice",
+    "etymology": ["Japanese", ["ご飯", "gohan"], "rice"],
+    "type": "noun",
+    "date": "22-04-2026"
+  },
+  {
+    "word": "kapy",
+    "definition": "door",
+    "etymology": ["Azerbaijani", "qapı", "door"],
+    "type": "noun",
+    "date": "22-04-2026"
+  },
+  {
+    "word": "kokure",
+    "definition": "to help",
+    "etymology": ["Hawaiian", "kōkua", "to help"],
+    "type": "verb",
+    "date": "22-04-2026"
+  },
+  {
+    "word": "zhuwe",
+    "definition": "music",
+    "etymology": ["Baoule", "jue"],
+    "type": "noun",
+    "date": "23-04-2026"
+  },
+  {
+    "word": "kupare",
+    "definition": "to climb, to ascend",
+    "etymology": ["Swahili", "kupaa", "to raise"],
+    "type": "verb",
+    "date": "23-04-2026"
+  },
+  {
+    "word": "tuwana",
+    "definition": "picture, image",
+    "etymology": ["Fijian", "tua'ana", "music"],
+    "type": "noun",
+    "date": "24-04-2026"
+  },
+  {
+    "word": "awkaj",
+    "definition": "war",
+    "etymology": ["Quechua", "awqay", "to fight"],
+    "type": "noun",
+    "date": "24-02-2026"
   }
 ]
