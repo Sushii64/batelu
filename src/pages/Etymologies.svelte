@@ -16,6 +16,7 @@
     "Uwulang",
     "This Thing",
     "Toki Pona",
+    "Sanskrit",
   ]);
   const missingLanguages = new Set();
   const countryAmounts = new Map();

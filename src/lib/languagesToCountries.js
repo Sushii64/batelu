@@ -177,4 +177,7 @@ export const languagesToCountries = {
   Lao: ["la"],
   Venetian: ["it"],
   Plautdietsch: ["de"],
+  Azerbaijani: ["az"],
+  Baoule: ["ci"],
+  Fijian: ["fj"],
 };
