@@ -1861,6 +1861,34 @@
     "definition": "war",
     "etymology": ["Quechua", "awqay", "to fight"],
     "type": "noun",
-    "date": "24-02-2026"
+    "date": "24-04-2026"
+  },
+  {
+    "word": "metru",
+    "definition": "meter (unit of length)",
+    "etymology": ["Romanian", "metru", "meter"],
+    "type": "noun",
+    "date": "24-04-2026"
+  },
+  {
+    "word": "pawi",
+    "definition": "tool",
+    "etymology": false,
+    "type": "noun",
+    "date": "25-04-2026"
+  },
+  {
+    "word": "anpasa",
+    "definition": "video, moving picture  ",
+    "etymology": ["Hebrew", ["הַנפָּשָׁה", "hanpashá"], "animation"],
+    "type": "noun",
+    "date": "25-04-2026"
+  },
+  {
+    "word": "nusu",
+    "definition": "indeterminate, tie",
+    "etymology": ["Romanian", "nu știu", "I don't know"],
+    "type": "noun",
+    "date": "25-04-2026"
   }
 ]
