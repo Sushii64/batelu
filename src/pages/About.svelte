@@ -394,7 +394,7 @@
       { role: "subject", batelu: ["culol"], english: ["sounds"] },
       { role: "numeral", batelu: ["W3"], english: ["123"] },
     ]}
-    translation="123 sounds (B3 in dozenal)"
+    translation="123 sounds (A3 in dozenal)"
   />
   <p>
     Ordinals use the word "law" between noun and number. Note that the definite
