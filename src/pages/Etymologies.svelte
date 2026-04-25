@@ -1,6 +1,6 @@
 <script>
-  import MapImage from "./MapImage.svelte";
-  import words from "./words.json";
+  import MapImage from "../components/MapImage.svelte";
+  import words from "../pages/words.json";
   import { languagesToCountries } from "../lib/languagesToCountries";
   import { onMount } from "svelte";
 
