@@ -314,10 +314,10 @@
     ]}
     translation="my fish"
   />
-  <h2>Prepositions</h2>
+  <h2>Adpositions</h2>
   <p>
-    The word order for prepositions is similar to that of English. They can
-    modify nouns:
+    Batelu only has prepositions. Their word order is similar to that of
+    English. They can modify nouns:
   </p>
   <Sentence
     sentence={[
