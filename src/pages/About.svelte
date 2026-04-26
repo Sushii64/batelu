@@ -105,7 +105,10 @@
     ]}
     translation="the cats, some cats"
   />
-  <p>If you want to, you can spell "mawyr al" with a hyphen: "mawyr-al".</p>
+  <p>
+    If you want to, you can spell these with a hyphen as well: "mawyr-al" and
+    "mawyr-ena".
+  </p>
   <p>Compound nouns are created by putting two nouns together:</p>
   <Sentence
     sentence={[
