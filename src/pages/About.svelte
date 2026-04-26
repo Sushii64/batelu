@@ -391,6 +391,75 @@
     ]}
     translation="to eat in a different way"
   />
+  <h2>Pronouns</h2>
+  <p>Pronouns distinguish between animacy and inanimacy:</p>
+  <Sentence
+    {onselect}
+    sentence={[
+      {
+        word: "kal",
+        role: "subject",
+        batelu: ["kal"],
+        english: ["they (sg., animate)"],
+      },
+      {
+        word: "nijare",
+        role: "verb",
+        batelu: ["nijaren"],
+        english: ["they (sg., animate) jump"],
+      },
+      { role: null, batelu: [","], english: [] },
+      {
+        word: "kel",
+        role: "subject",
+        batelu: ["kal"],
+        english: ["it"],
+      },
+      {
+        word: "nijare",
+        role: "verb",
+        batelu: ["nijaren"],
+        english: ["it jumps"],
+      },
+    ]}
+    translation="they jump, it jumps"
+  />
+  <p>
+    Just like verbs, animacy is not distinguished in the first person. Instead,
+    the first person pronouns change depending on the time of day. If it's night
+    for you, you can optionally use the corresponding pronoun:
+  </p>
+  <Sentence
+    {onselect}
+    sentence={[
+      {
+        word: "ja",
+        role: "subject",
+        batelu: ["ja"],
+        english: ["I (day)"],
+      },
+      {
+        word: "nijare",
+        role: "verb",
+        batelu: ["nije"],
+        english: ["I jump"],
+      },
+      { role: null, batelu: [","], english: [] },
+      {
+        word: "jo",
+        role: "subject",
+        batelu: ["jo"],
+        english: ["I (night)"],
+      },
+      {
+        word: "nijare",
+        role: "verb",
+        batelu: ["nije"],
+        english: ["I jump"],
+      },
+    ]}
+    translation="I jump; I jump (and it's night right now)"
+  />
   <p>
     Possessive pronouns work just like modifiers - so they need articles most of
     the time:
