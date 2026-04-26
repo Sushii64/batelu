@@ -1962,6 +1962,16 @@
     "date": "25-04-2026"
   },
   {
+    "word": "ajarore",
+    "definition": "to agree",
+    "etymology": [
+      ["English", "to agree"],
+      ["Batelu", "jarok"]
+    ],
+    "type": "verb",
+    "date": "26-04-2026"
+  },
+  {
     "word": "ta",
     "definition": "(subject marker)",
     "etymology": ["Mandarin Chinese", ["它", "tā"], "it"],
