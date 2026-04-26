@@ -1914,5 +1914,26 @@
     "etymology": ["Romanian", "nu știu", "I don't know"],
     "type": "noun",
     "date": "25-04-2026"
+  },
+  {
+    "word": "ta",
+    "definition": "(subject marker)",
+    "etymology": ["Mandarin Chinese", ["它", "tā"], "it"],
+    "type": "particle",
+    "date": "26-04-2026"
+  },
+  {
+    "word": "ky",
+    "definition": "(verb marker)",
+    "etymology": ["Romanian", "facă", "they do (subjunctive)"],
+    "type": "particle",
+    "date": "26-04-2026"
+  },
+  {
+    "word": "lu",
+    "definition": "(object marker)",
+    "etymology": ["Romanian", "lucru", "thing"],
+    "type": "particle",
+    "date": "26-04-2026"
   }
 ]

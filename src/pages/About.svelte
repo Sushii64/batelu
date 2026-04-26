@@ -52,9 +52,26 @@
     translation="I eat noodles."
   />
   <p>
-    Other word orders are also possible by marking them with special particles.
-    These particles have not been created yet, though.
+    For stylistic effect, other word orders are also possible. The subject,
+    object and verb need to be marked with particles:
   </p>
+  <Sentence
+    {onselect}
+    sentence={[
+      { word: "ky", role: "particle", batelu: ["ky"], english: ["(verb)"] },
+      { word: "jesere", role: "verb", batelu: ["jese"], english: ["I eat"] },
+      { word: "lu", role: "particle", batelu: ["lu"], english: ["(object)"] },
+      {
+        word: "abjan",
+        role: "object",
+        batelu: ["abjan"],
+        english: ["noodles"],
+      },
+      { word: "ta", role: "particle", batelu: ["ta"], english: ["(subject)"] },
+      { word: "ja", role: "subject", batelu: ["ja"], english: ["I"] },
+    ]}
+    translation="I eat noodles."
+  />
   <p>Yes/no-questions can be created with the particle "ko":</p>
   <Sentence
     {onselect}
