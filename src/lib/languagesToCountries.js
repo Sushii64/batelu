@@ -180,4 +180,5 @@ export const languagesToCountries = {
   Azerbaijani: ["az"],
   Baoule: ["ci"],
   Fijian: ["fj"],
+  Portuguese: ["pt", "br", "ao", "cv", "tl", "gq", "gw", "mo", "mz", "st"],
 };
