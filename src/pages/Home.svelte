@@ -1,5 +1,5 @@
 <script>
-	import wordsData from "./words.json";
+	import { words as wordsData } from "../lib/words.js";
 	import itemsData from "./items.json";
   import { onMount } from "svelte";
 

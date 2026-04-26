@@ -1,6 +1,6 @@
 <script>
   import MapImage from "../components/MapImage.svelte";
-  import words from "../pages/words.json";
+  import { words } from "../lib/words.js";
   import { languagesToCountries } from "../lib/languagesToCountries";
   import { onMount } from "svelte";
 
@@ -216,7 +216,7 @@
                 {#if i === 0}
                   <div class="language-name">{language}</div>
                 {/if}
-                <div class="word-name">{word.word} - {word.summary}</div>
+                <div class="word-name">{word.displayWord} - {word.summary}</div>
                 <div class="word-etymology">
                   <small>
                     ← {Array.isArray(word.etymology[1])

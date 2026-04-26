@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { toIPA } from "../lib/toIPA";
-  import wordsData from "./words.json";
+  import { words } from "../lib/words.js";
 
   let wordType = "verb";
   let initialized = false;
@@ -24,7 +24,7 @@
   $: validatedWord = getError(word, wordType, verbWord);
   $: deducedWordType = (() => {
     if (wordType === "pronoun") return null;
-    let possibleWord = wordsData.find((w) => w.word === word);
+    let possibleWord = words.find((w) => w.word === word);
     if (
       possibleWord &&
       (possibleWord.type === "noun" ||
