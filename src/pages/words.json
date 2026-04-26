@@ -1892,6 +1892,56 @@
     "date": "23-04-2026"
   },
   {
+    "word": "catarbon",
+    "definition": "good morning",
+    "etymology": [
+      ["Batelu", "catar"],
+      ["Batelu", "bon"]
+    ],
+    "type": "interjection",
+    "date": "23-04-2026"
+  },
+  {
+    "word": "rowonbon",
+    "definition": "good day (greeting at noon)",
+    "etymology": [
+      ["Batelu", "rowon"],
+      ["Batelu", "bon"]
+    ],
+    "type": "interjection",
+    "date": "23-04-2026"
+  },
+  {
+    "word": "amcarbon",
+    "definition": "good afternoon",
+    "etymology": [
+      ["Batelu", "amcar"],
+      ["Batelu", "bon"]
+    ],
+    "type": "interjection",
+    "date": "23-04-2026"
+  },
+  {
+    "word": "itrejbon",
+    "definition": "good evening",
+    "etymology": [
+      ["Batelu", "itrej"],
+      ["Batelu", "bon"]
+    ],
+    "type": "interjection",
+    "date": "23-04-2026"
+  },
+  {
+    "word": "dijobon",
+    "definition": "good night",
+    "etymology": [
+      ["Batelu", "dijo"],
+      ["Batelu", "bon"]
+    ],
+    "type": "interjection",
+    "date": "23-04-2026"
+  },
+  {
     "word": "kupare",
     "definition": "to climb, to ascend",
     "etymology": ["Swahili", "kupaa", "to raise"],
