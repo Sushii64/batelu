@@ -1916,6 +1916,27 @@
     "date": "25-04-2026"
   },
   {
+    "word": "kitore",
+    "definition": "to win",
+    "etymology": ["Maori", "ki te wikitoria", "to win"],
+    "type": "verb",
+    "date": "25-04-2026"
+  },
+  {
+    "word": "sampura",
+    "definition": "whole, complete",
+    "etymology": ["Bengali", ["সম্পূর্ণ", "śompurno"], "complete"],
+    "type": "modifier",
+    "date": "25-04-2026"
+  },
+  {
+    "word": "jary",
+    "definition": "rectangle, square, four-sided polygon",
+    "etymology": ["Norwegian", "gjerde", "fence"],
+    "type": "noun",
+    "date": "25-04-2026"
+  },
+  {
     "word": "ta",
     "definition": "(subject marker)",
     "etymology": ["Mandarin Chinese", ["它", "tā"], "it"],
