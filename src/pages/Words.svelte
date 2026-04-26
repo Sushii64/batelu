@@ -1,10 +1,9 @@
 <script>
-  import wordsData from "./words.json";
+  import { words, errors } from "../lib/words.js";
   import { toIPA } from "../lib/toIPA";
+  import WordDrawer from "../components/WordDrawer.svelte";
 
   export let navigate;
-
-  const cleanWord = (w) => w.replace(/\d+$/, "");
 
   function WeightedDL(s1, s2) {
     function substitutionCost(a, b, i, j) {
@@ -42,24 +41,14 @@
     return dp[m][n] / Math.max(m, n);
   }
 
-  let words = wordsData.map((w, index) => {
-    const displayWord = cleanWord(w.word);
-    const ipa = toIPA(displayWord);
-    return {
-      ...w,
-      displayWord,
-      index,
-      ipa,
-    };
-  });
-  let errors = words.filter((word) => word.ipa.error);
-
-  import { tick, onMount } from "svelte";
-  import { preventDefault } from "svelte/legacy";
+  import { onMount } from "svelte";
 
   let q = "";
   let sortBy = "best-match";
   let selected = null;
+  $: {
+    console.log(selected);
+  }
   let drawerEl;
   let initialized = false;
 
@@ -96,17 +85,6 @@
     if (!d) return 0;
     const [day, month, year] = d.split("-").map(Number);
     return new Date(year, month - 1, day).getTime();
-  };
-
-  const formatDate = (d) => {
-    if (!d) return "";
-    const [day, month, year] = d.split("-").map(Number);
-    const date = new Date(year, month - 1, day);
-    return date.toLocaleDateString("en-GB", {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    });
   };
 
   let specificWordTypes = new Set();
@@ -192,11 +170,6 @@
 
   async function open(w) {
     selected = w;
-    await tick();
-    drawerEl?.focus();
-  }
-  function close() {
-    selected = null;
   }
   function onCardKeydown(e, w) {
     if (e.key === "Enter" || e.key === " ") {
@@ -204,19 +177,7 @@
       open(w);
     }
   }
-  function onWindowKeydown(e) {
-    if (e.key === "Escape") {
-      close();
-    }
-  }
-
-  // Prevent background scroll when drawer is open
-  $: document &&
-    document.body &&
-    (document.body.style.overflow = selected ? "hidden" : "");
 </script>
-
-<svelte:window on:keydown={onWindowKeydown} />
 
 <main class="container">
   <header class="main-header">
@@ -322,125 +283,7 @@
   </div>
 </section>
 
-{#if selected}
-  <div class="overlay" aria-hidden="true" on:click={close}></div>
-  <aside
-    id="word-panel"
-    class="drawer"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="panel-title"
-    bind:this={drawerEl}
-    tabindex="-1"
-  >
-    <div class="drawer-handle" aria-hidden="true"></div>
-    <header class="drawer-header">
-      <h2 id="panel-title">{selected.displayWord}</h2>
-      {#if selected.type === "verb" || selected.type === "noun" || selected.type === "modifier"}
-        <button
-          class="aside-top-button"
-          on:click={() => {
-            const { type, displayWord } = selected;
-            close();
-            setTimeout(() => {
-              navigate(`/inflect?type=${type}&q=${displayWord}`);
-            });
-          }}>Inflect</button
-        >
-      {/if}
-      <button
-        class="close aside-top-button"
-        on:click={close}
-        aria-label="Close details">×</button
-      >
-    </header>
-    <section class="drawer-body">
-      <div class="detail-display">
-        <h1 class="detail-word">{selected.displayWord}</h1>
-        <p class="detail-syllables">
-          {selected.ipa?.ipa ?? "this word is invalid"}
-        </p>
-        <p class="detail-type">{selected.type}</p>
-        <label class="detail-label">definition</label>
-        <p class="detail-text">{selected.definition}</p>
-        {#if selected.usage}
-          <label class="detail-label">usage</label>
-          <p class="detail-text">{selected.usage}</p>{/if}
-        <label class="detail-label">etymology</label>
-        {#snippet etymologyDescription(etymology)}
-          {#if etymology === false}
-            a priori
-          {:else if Array.isArray(etymology)}
-            {#if Array.isArray(etymology[1])}
-              {#if etymology.length > 2 && etymology[2]}
-                <span class="ety-lang">{etymology[0]}</span>
-                <em class="ety-word">{etymology[1][0]}</em>
-                (<span class="ety-roman">{etymology[1][1]}</span>) "<span
-                  class="ety-gloss">{etymology[2]}</span
-                >"
-              {:else}
-                <span class="ety-lang">{etymology[0]}</span>
-                <em class="ety-word">{etymology[1][0]}</em>
-                (<span class="ety-roman">{etymology[1][1]}</span>)
-              {/if}
-            {:else if etymology.length > 2 && etymology[2]}
-              <span class="ety-lang">{etymology[0]}</span>
-              <em class="ety-word">{etymology[1]}</em>
-              "<span class="ety-gloss">{etymology[2]}</span>"
-            {:else if etymology[0] === "Batelu" && etymology[1].includes(" ")}
-              {@const words = etymology[1].split(" ")}
-              {#each words as word, i}
-                {@render etymologyDescription(["Batelu", word])}
-                {#if i !== words.length - 1}
-                  <br />
-                {/if}
-              {/each}
-            {:else if etymology[0] === "Batelu"}
-              {@const word = words.find((word) => word.word === etymology[1])}
-              <span class="ety-lang">{etymology[0]}</span>
-              <em class="ety-word"
-                ><a
-                  href={(() => {
-                    const url = new URL(location.href);
-                    url.searchParams.set("word", etymology[1]);
-                    return url.toString();
-                  })()}
-                  on:click={(e) => {
-                    e.preventDefault();
-                    open(word);
-                  }}>{etymology[1]}</a
-                ></em
-              >
-              {#if word}
-                "<span class="ety-gloss">{word.definition.split(", ")[0]}</span
-                >"
-                <br />
-                <span class="ety-further">
-                  ← {@render etymologyDescription(word.etymology)}
-                </span>
-              {:else}
-                <span class="ety-error">word not found</span>
-              {/if}
-            {:else}
-              <span class="ety-lang">{etymology[0]}</span>
-              <em class="ety-word">{etymology[1]}</em>
-            {/if}
-          {:else}
-            {etymology}
-          {/if}
-        {/snippet}
-        <p class="detail-text">
-          {@render etymologyDescription(selected.etymology)}
-        </p>
-
-        {#if selected.date}
-          <label class="detail-label">creation date</label>
-          <p class="detail-text">{formatDate(selected.date)}</p>
-        {/if}
-      </div>
-    </section>
-  </aside>
-{/if}
+<WordDrawer bind:word={selected} {navigate} />
 
 <style>
   .main-header {
@@ -682,211 +525,6 @@
     text-overflow: ellipsis;
   }
 
-  /* Remove incorrect early overlay layout if present (ensure overlay is full-screen) */
-
-  /* Overlay (full-screen backdrop) */
-  .overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
-    z-index: 60;
-  }
-
-  /* Keyframes (top-level for compatibility) */
-  @keyframes popIn {
-    from {
-      transform: translate(-50%, calc(-50% + 14px));
-      opacity: 0;
-    }
-    to {
-      transform: translate(-50%, -50%);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideUp {
-    from {
-      transform: translateX(-50%) translateY(18px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(-50%) translateY(0);
-      opacity: 1;
-    }
-  }
-
-  /* Details panel: default = centered popup (desktop/tablet) */
-  .drawer {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: clamp(320px, 92vw, 980px);
-    max-height: 96vh; /* taller */
-    min-height: 60vh; /* bigger minimum height */
-    background: #101010;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    box-shadow:
-      0 24px 70px rgba(0, 0, 0, 0.55),
-      0 1px 0 rgba(255, 255, 255, 0.04) inset;
-    z-index: 70;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    padding: 1rem 1.2rem 1.2rem;
-    box-sizing: border-box; /* prevent layout overflow */
-    overflow: hidden; /* clip internals (no horiz scroll) */
-    animation: popIn 160ms ease-out;
-  }
-
-  .drawer-handle {
-    display: none; /* only visible on mobile sheet */
-  }
-
-  .drawer-header {
-    display: flex;
-    align-items: stretch;
-    gap: 0.5rem;
-  }
-
-  .drawer-header h2 {
-    flex: 1;
-    margin: 0.2rem 0 0.1rem;
-    font-size: clamp(1.25rem, 2.2vw, 1.7rem);
-    letter-spacing: 0.2px;
-  }
-
-  .aside-top-button {
-    appearance: none;
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--fg);
-    border-radius: 12px;
-    padding: 0.35rem 0.65rem;
-    line-height: 1;
-    cursor: pointer;
-    width: auto;
-  }
-  .close {
-    font-size: 1.6rem; /* bigger X */
-  }
-
-  .drawer-body {
-    overflow-y: auto; /* scroll vertically when needed */
-    overflow-x: hidden; /* never scroll horizontally */
-    margin-top: 0.25rem;
-    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
-    overflow-wrap: anywhere; /* avoid horizontal overflow from long text */
-    padding-right: 2px; /* ensure scrollbar doesn't overlap text */
-  }
-
-  .meta-row {
-    display: grid;
-    grid-template-columns: 110px 1fr;
-    gap: 0.6rem;
-    align-items: start;
-    padding: 0.5rem 0.6rem;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    background: color-mix(in srgb, var(--fg) 2%, transparent);
-  }
-
-  .meta-label {
-    color: var(--muted);
-    font-weight: 600;
-  }
-
-  .meta-value {
-    color: var(--fg);
-  }
-
-  /* Popup content styling inspired layout */
-  .detail-display {
-    display: block;
-    width: min(840px, 100%);
-    margin: 0 auto;
-    padding: 0.5rem 0.5rem 0.75rem;
-    box-sizing: border-box;
-  }
-
-  .detail-word {
-    font-family:
-      system-ui,
-      -apple-system,
-      Segoe UI,
-      Roboto,
-      Helvetica,
-      Arial,
-      "Apple Color Emoji",
-      "Segoe UI Emoji";
-    font-weight: 800;
-    font-size: clamp(2.4rem, 6vw, 3.6rem);
-    line-height: 1.08;
-    margin: 0 0 0.35rem 0;
-    letter-spacing: 0.2px;
-    color: var(--fg);
-  }
-
-  .detail-syllables {
-    font-size: 1.1rem;
-    color: var(--muted);
-    margin: 0.3rem 0 0.9rem;
-  }
-
-  .detail-type {
-    font-size: 1.1rem;
-    color: var(--muted);
-    margin: 0.3rem 0 0.9rem;
-    font-style: italic;
-  }
-
-  .detail-label {
-    display: block;
-    font-weight: 700;
-    color: var(--muted);
-    margin-top: 1rem;
-    letter-spacing: 0.2px;
-  }
-
-  .detail-text {
-    margin: 0.45rem 0 0.35rem;
-    font-size: 1.18rem;
-    line-height: 1.65;
-    color: var(--fg);
-  }
-
-  /* Etymology accents */
-  .ety-lang {
-    font-weight: 700;
-  }
-  .ety-word {
-    font-style: italic;
-  }
-  .ety-roman {
-    opacity: 0.95;
-  }
-  .ety-gloss {
-    opacity: 0.92;
-  }
-  .ety-further {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  .ety-error {
-    color: var(--accent-error);
-  }
-
-  /* Outlined box specifically for the definition content */
-  .def-box {
-    border: 2px solid #ffffff; /* visible white outline */
-    border-radius: 12px;
-    padding: 0.75rem 0.85rem;
-    background: color-mix(in srgb, var(--fg) 2.5%, transparent);
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
-    margin-top: 0.35rem;
-  }
-
   /* Mobile: turn into bottom sheet/drawer */
   @media (max-width: 640px) {
     .search {
@@ -922,31 +560,6 @@
     .card .accent {
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
-    }
-
-    .detail-display {
-      width: 100%;
-    }
-
-    .detail-word {
-      font-size: clamp(2rem, 9vw, 2.6rem);
-    }
-
-    .detail-text {
-      font-size: 1.08rem;
-    }
-
-    .drawer-handle {
-      display: block;
-      width: 48px;
-      height: 5px;
-      border-radius: 999px;
-      background: color-mix(in srgb, var(--fg) 14%, transparent);
-      margin: 0 auto 0.6rem;
-    }
-
-    .meta-row {
-      grid-template-columns: 90px 1fr;
     }
   }
 </style>
