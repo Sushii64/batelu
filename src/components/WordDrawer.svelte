@@ -83,7 +83,14 @@
           {#if etymology === false}
             a priori
           {:else if Array.isArray(etymology)}
-            {#if Array.isArray(etymology[1])}
+            {#if Array.isArray(etymology[0])}
+              {#each etymology as subetymology, i}
+                {@render etymologyDescription(subetymology)}
+                {#if i !== etymology[0].length - 1}
+                  <br />
+                {/if}
+              {/each}
+            {:else if Array.isArray(etymology[1])}
               {#if etymology.length > 2 && etymology[2]}
                 <span class="ety-lang">{etymology[0]}</span>
                 <em class="ety-word">{etymology[1][0]}</em>
@@ -99,14 +106,6 @@
               <span class="ety-lang">{etymology[0]}</span>
               <em class="ety-word">{etymology[1]}</em>
               "<span class="ety-gloss">{etymology[2]}</span>"
-            {:else if etymology[0] === "Batelu" && etymology[1].includes(" ")}
-              {@const words = etymology[1].split(" ")}
-              {#each words as word, i}
-                {@render etymologyDescription(["Batelu", word])}
-                {#if i !== words.length - 1}
-                  <br />
-                {/if}
-              {/each}
             {:else if etymology[0] === "Batelu"}
               {@const word = words.find((word) => word.word === etymology[1])}
               <span class="ety-lang">{etymology[0]}</span>

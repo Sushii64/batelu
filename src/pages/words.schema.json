@@ -12,28 +12,7 @@
         "type": "string",
         "description": "The word's meaning in English."
       },
-      "etymology": {
-        "oneOf": [
-          { "enum": [false] },
-          {
-            "type": "array",
-            "prefixItems": [
-              { "type": "string" },
-              {
-                "oneOf": [
-                  { "type": "string" },
-                  {
-                    "type": "array",
-                    "prefixItems": [{ "type": "string" }, { "type": "string" }]
-                  }
-                ]
-              },
-              { "type": "string" }
-            ]
-          }
-        ],
-        "description": "The word's etymology.\nIn the format of [\"Language\", [\"word\", \"transcription\"], \"meaning\"].\nIf the language already uses the Latin script, the format is [\"Language\", \"word\", \"meaning\"].\nIf the word is a priori, use false.\nIf the source language is Batelu or English, don't put a meaning."
-      },
+      "etymology": { "$ref": "#/definitions/etymology" },
       "type": {
         "enum": [
           "noun",
@@ -60,5 +39,33 @@
     },
     "required": ["word", "definition", "etymology", "type", "date"],
     "additionalProperties": false
+  },
+  "definitions": {
+    "etymology": {
+      "oneOf": [
+        { "enum": [false] },
+        {
+          "type": "array",
+          "prefixItems": [
+            { "type": "string" },
+            {
+              "oneOf": [
+                { "type": "string" },
+                {
+                  "type": "array",
+                  "prefixItems": [{ "type": "string" }, { "type": "string" }]
+                }
+              ]
+            },
+            { "type": "string" }
+          ]
+        },
+        {
+          "type": "array",
+          "items": { "$ref": "#/definitions/etymology" }
+        }
+      ],
+      "description": "The word's etymology.\nIn the format of [\"Language\", [\"word\", \"transcription\"], \"meaning\"].\nIf the language already uses the Latin script, the format is [\"Language\", \"word\", \"meaning\"].\nIf the word is a priori, use false.\nIf the source language is Batelu or English, don't put a meaning.\nIf there's multiple source words, it can be an array of etymologies."
+    }
   }
 }

@@ -44,7 +44,11 @@
   {
     "word": "batelu",
     "definition": "Batelu",
-    "etymology": ["Batelu", "baxen tesa ludina"],
+    "etymology": [
+      ["Batelu", "baxen"],
+      ["Batelu", "tesa"],
+      ["Batelu", "ludina"]
+    ],
     "type": "noun",
     "date": "13-05-2025"
   },
@@ -293,7 +297,10 @@
   {
     "word": "dijabon",
     "definition": "hello, greetings, (literally) good day",
-    "etymology": ["Batelu", "dija bon"],
+    "etymology": [
+      ["Batelu", "dija"],
+      ["Batelu", "bon"]
+    ],
     "type": "interjection",
     "date": "05-01-2026"
   },
@@ -748,7 +755,10 @@
   {
     "word": "kausmempaw",
     "definition": "cheeseburger",
-    "etymology": ["Batelu", "kaus mempaw"],
+    "etymology": [
+      ["Batelu", "kaus"],
+      ["Batelu", "mempaw"]
+    ],
     "type": "noun",
     "date": "15-02-2026"
   },
@@ -1203,7 +1213,10 @@
   {
     "word": "sinibyr",
     "definition": "not true",
-    "etymology": ["Batelu", "sini byr"],
+    "etymology": [
+      ["Batelu", "sini"],
+      ["Batelu", "byr"]
+    ],
     "type": "modifier",
     "date": "03-04-2026"
   },
@@ -1701,7 +1714,10 @@
   {
     "word": "ludinto",
     "definition": "artificial, man-made",
-    "etymology": ["Batelu", "ludina tojare"],
+    "etymology": [
+      ["Batelu", "ludina"],
+      ["Batelu", "tojare"]
+    ],
     "type": "modifier",
     "date": "20-04-2026"
   },
@@ -1736,7 +1752,10 @@
   {
     "word": "ludinatesa",
     "definition": "democracy",
-    "etymology": ["Batelu", "ludina tesare"],
+    "etymology": [
+      ["Batelu", "ludina"],
+      ["Batelu", "tesare"]
+    ],
     "type": "noun",
     "date": "20-04-2026"
   },
@@ -1799,7 +1818,10 @@
   {
     "word": "jesa",
     "definition": "hungry",
-    "etymology": ["Batelu", "jesere tesare"],
+    "etymology": [
+      ["Batelu", "jesere"],
+      ["Batelu", "tesare"]
+    ],
     "type": "modifier",
     "date": "21-04-2026"
   },
@@ -1820,7 +1842,10 @@
   {
     "word": "dijo",
     "definition": "night",
-    "etymology": ["Batelu", "dija jo"],
+    "etymology": [
+      ["Batelu", "dija"],
+      ["Batelu", "jo"]
+    ],
     "type": "noun",
     "date": "22-04-2026"
   },
