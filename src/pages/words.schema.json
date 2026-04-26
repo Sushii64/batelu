@@ -43,7 +43,8 @@
           "modifier",
           "numeral",
           "adposition",
-          "conjunction"
+          "conjunction",
+          "pronoun"
         ],
         "description": "The part of speech of the word."
       },

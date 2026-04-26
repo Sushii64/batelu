@@ -16,7 +16,15 @@
   --inset-highlight: rgba(255, 255, 255, 0.04);
 
   color-scheme: dark;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -75,7 +83,9 @@ a {
   color: var(--accent);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  transition:
+    color 0.15s ease,
+    text-decoration-color 0.15s ease;
 }
 
 a:hover {
@@ -87,7 +97,8 @@ a:hover {
 code,
 kbd,
 samp {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 0.95em;
   background: var(--surface-card);
   border: 1px solid var(--border);
@@ -117,7 +128,9 @@ pre code {
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px var(--shadow-light);
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  transition:
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
 }
 
 .card:hover {
@@ -188,8 +201,8 @@ pre code {
   backdrop-filter: blur(10px);
 
   box-shadow:
-          0 10px 28px var(--shadow),
-          0 1px 0 var(--inset-highlight) inset;
+    0 10px 28px var(--shadow),
+    0 1px 0 var(--inset-highlight) inset;
 }
 
 .nav a {
@@ -197,7 +210,10 @@ pre code {
   white-space: nowrap;
   padding: 0.5rem 0.8rem;
   border-radius: 12px;
-  transition: background-color 0.15s ease, color 0.15s ease, transform 0.04s ease;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.04s ease;
 }
 
 .nav a:hover {
@@ -235,7 +251,10 @@ textarea {
   border: 1px solid var(--border);
   border-radius: 10px;
   outline: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
 }
 
 input::placeholder,
@@ -246,8 +265,13 @@ textarea::placeholder {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: color-mix(in srgb, var(--input-accent, var(--accent)) 45%, var(--border));
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--input-accent, var(--accent)) 30%, transparent);
+  border-color: color-mix(
+    in srgb,
+    var(--input-accent, var(--accent)) 45%,
+    var(--border)
+  );
+  box-shadow: 0 0 0 3px
+    color-mix(in srgb, var(--input-accent, var(--accent)) 30%, transparent);
   background: var(--bg);
 }
 
@@ -315,10 +339,24 @@ legend {
 }
 
 /* Buttons and interactive inputs */
-button,
-input[type="submit"],
-input[type="button"],
-input[type="reset"] {
+
+button.styleless-button,
+input[type="submit"].styleless-button,
+input[type="button"].styleless-button,
+input[type="reset"].styleless-button {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  text-align: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:not(.styleless-button),
+input[type="submit"]:not(.styleless-button),
+input[type="button"]:not(.styleless-button),
+input[type="reset"]:not(.styleless-button) {
   font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
@@ -328,65 +366,68 @@ input[type="reset"] {
   border-radius: 10px;
   padding: 0.55em 1em;
   cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.04s ease;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.04s ease;
 }
 
-button:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover {
+button:hover:not(.styleless-button),
+input[type="submit"]:hover:not(.styleless-button),
+input[type="button"]:hover:not(.styleless-button),
+input[type="reset"]:hover:not(.styleless-button) {
   background: var(--surface-hover);
   border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
 }
 
-button:active,
-input[type="submit"]:active,
-input[type="button"]:active,
-input[type="reset"]:active {
+button:active:not(.styleless-button),
+input[type="submit"]:active:not(.styleless-button),
+input[type="button"]:active:not(.styleless-button),
+input[type="reset"]:active:not(.styleless-button) {
   transform: translateY(1px);
 }
 
-button:focus,
-button:focus-visible,
-input[type="submit"]:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus {
+button:focus:not(.styleless-button),
+button:focus-visible:not(.styleless-button),
+input[type="submit"]:focus:not(.styleless-button),
+input[type="button"]:focus:not(.styleless-button),
+input[type="reset"]:focus:not(.styleless-button) {
   outline: none;
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
-button:disabled,
-input[type="submit"]:disabled,
-input[type="button"]:disabled,
-input[type="reset"]:disabled {
+button:disabled:not(.styleless-button),
+input[type="submit"]:disabled:not(.styleless-button),
+input[type="button"]:disabled:not(.styleless-button),
+input[type="reset"]:disabled:not(.styleless-button) {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
 /* Button variants */
-.btn-primary {
+.btn-primary:not(.styleless-button) {
   background: var(--accent);
   color: #000;
   border-color: var(--accent);
 }
 
-.btn-primary:hover {
+.btn-primary:hover:not(.styleless-button) {
   background: color-mix(in srgb, var(--accent) 85%, #000);
   border-color: color-mix(in srgb, var(--accent) 85%, #000);
 }
 
-.btn-secondary {
+.btn-secondary:not(.styleless-button) {
   background: transparent;
   border-color: var(--border);
 }
 
-.btn-danger {
+.btn-danger:not(.styleless-button) {
   background: #dc2626;
   color: #fff;
   border-color: #dc2626;
 }
 
-.btn-danger:hover {
+.btn-danger:hover:not(.styleless-button) {
   background: #b91c1c;
   border-color: #b91c1c;
 }
@@ -630,8 +671,8 @@ kbd {
     border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow:
-            0 8px 24px var(--shadow),
-            0 1px 0 var(--inset-highlight) inset;
+      0 8px 24px var(--shadow),
+      0 1px 0 var(--inset-highlight) inset;
   }
 
   form {

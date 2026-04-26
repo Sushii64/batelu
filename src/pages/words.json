@@ -70,11 +70,27 @@
     "date": "18-05-2025"
   },
   {
+    "word": "ja",
+    "definition": "first person pronoun, I",
+    "etymology": ["Russian", ["я", "ja"], "I"],
+    "type": "pronoun",
+    "date": "28-05-2025",
+    "usage": "See inflections page."
+  },
+  {
     "word": "katare",
     "definition": "to communicate, to speak, to talk",
     "etymology": ["Japanese", ["語る", "kataru"], "speak"],
     "type": "verb",
     "date": "28-05-2025"
+  },
+  {
+    "word": "voze",
+    "definition": "second person pronoun, you",
+    "etymology": ["Portuguese", "você", "you"],
+    "type": "pronoun",
+    "date": "28-05-2025",
+    "usage": "See inflections page."
   },
   {
     "word": "jesere",
@@ -96,6 +112,14 @@
     "etymology": ["Mandarin Chinese", ["狼人", "lángrén"], "werewolf"],
     "type": "noun",
     "date": "09-06-2025"
+  },
+  {
+    "word": "kal",
+    "definition": "third person pronoun, they",
+    "etymology": false,
+    "type": "pronoun",
+    "date": "19-06-2025",
+    "usage": "See inflections page."
   },
   {
     "word": "vi",

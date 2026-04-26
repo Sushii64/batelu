@@ -1,7 +1,13 @@
 <script>
   import Sentence from "../components/Sentence.svelte";
+  import WordDrawer from "../components/WordDrawer.svelte";
 
   export let navigate;
+
+  let selected = null;
+  const onselect = (word) => {
+    selected = word;
+  };
 </script>
 
 <main class="container">
@@ -14,10 +20,17 @@
   <h2>Sentences</h2>
   <p>Batelu uses SOV word order by default.</p>
   <Sentence
+    {onselect}
+    clickHint
     sentence={[
-      { role: "subject", batelu: ["ja"], english: ["I"] },
-      { role: "object", batelu: ["abjan"], english: ["noodles"] },
-      { role: "verb", batelu: ["jese"], english: ["I eat"] },
+      { word: "ja", role: "subject", batelu: ["ja"], english: ["I"] },
+      {
+        word: "abjan",
+        role: "object",
+        batelu: ["abjan"],
+        english: ["noodles"],
+      },
+      { word: "jesere", role: "verb", batelu: ["jese"], english: ["I eat"] },
     ]}
     translation="I eat noodles."
   />
@@ -26,9 +39,15 @@
     may also be left out:
   </p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "object", batelu: ["abjan"], english: ["noodles"] },
-      { role: "verb", batelu: ["jese"], english: ["I eat"] },
+      {
+        word: "abjan",
+        role: "object",
+        batelu: ["abjan"],
+        english: ["noodles"],
+      },
+      { word: "jesere", role: "verb", batelu: ["jese"], english: ["I eat"] },
     ]}
     translation="I eat noodles."
   />
@@ -38,10 +57,21 @@
   </p>
   <p>Yes/no-questions can be created with the particle "ko":</p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "particle", batelu: ["ko"], english: ["?"] },
-      { role: "object", batelu: ["abjan"], english: ["noodles"] },
-      { role: "verb", batelu: ["jeseve"], english: ["you eat"] },
+      { word: "ko", role: "particle", batelu: ["ko"], english: ["?"] },
+      {
+        word: "abjan",
+        role: "object",
+        batelu: ["abjan"],
+        english: ["noodles"],
+      },
+      {
+        word: "jesere",
+        role: "verb",
+        batelu: ["jeseve"],
+        english: ["you eat"],
+      },
     ]}
     translation="Do you eat noodles?"
   />
@@ -49,17 +79,25 @@
     Open ended questions can be created with more specific interrogative words:
   </p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "particle", batelu: ["va"], english: ["what"] },
-      { role: "verb", batelu: ["jeseve"], english: ["you eat"] },
+      { word: "va2", role: "particle", batelu: ["va"], english: ["what"] },
+      {
+        word: "jesere",
+        role: "verb",
+        batelu: ["jeseve"],
+        english: ["you eat"],
+      },
     ]}
     translation="What do you eat?"
   />
   <h2>Nouns</h2>
   <p>Nouns can be turned plural with the cu- prefix:</p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "mawyr",
         role: "subject",
         batelu: [{ content: "cu", affix: true }, "mawyr"],
         english: ["cat", { content: "s", affix: true }],
@@ -71,8 +109,10 @@
     For phonetic reasons, the prefix is turned into cul- when before a vowel:
   </p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "istar",
         role: "subject",
         batelu: [{ content: "cul", affix: true }, "istar"],
         english: ["alien", { content: "s", affix: true }],
@@ -82,12 +122,13 @@
   />
   <p>There are articles that are attached directly to the noun:</p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["mawyr"], english: ["cat"] },
-      { role: "particle", batelu: ["al"], english: ["the"] },
+      { word: "mawyr", role: "subject", batelu: ["mawyr"], english: ["cat"] },
+      { word: "al", role: "particle", batelu: ["al"], english: ["the"] },
       { role: null, batelu: [","], english: [] },
-      { role: "subject", batelu: ["mawyr"], english: ["cat"] },
-      { role: "particle", batelu: ["ena"], english: ["a"] },
+      { word: "mawyr", role: "subject", batelu: ["mawyr"], english: ["cat"] },
+      { word: "ena", role: "particle", batelu: ["ena"], english: ["a"] },
     ]}
     translation="the cat, a cat"
   />
@@ -96,12 +137,23 @@
     article doesn't change.
   </p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["cumawyr"], english: ["cats"] },
-      { role: "particle", batelu: ["al"], english: ["the"] },
+      {
+        word: "mawyr",
+        role: "subject",
+        batelu: ["cumawyr"],
+        english: ["cats"],
+      },
+      { word: "al", role: "particle", batelu: ["al"], english: ["the"] },
       { role: null, batelu: [","], english: [] },
-      { role: "subject", batelu: ["cumawyr"], english: ["cats"] },
-      { role: "particle", batelu: ["ena"], english: ["a"] },
+      {
+        word: "mawyr",
+        role: "subject",
+        batelu: ["cumawyr"],
+        english: ["cats"],
+      },
+      { word: "ena", role: "particle", batelu: ["ena"], english: ["a"] },
     ]}
     translation="the cats, some cats"
   />
@@ -111,6 +163,7 @@
   </p>
   <p>Compound nouns are created by putting two nouns together:</p>
   <Sentence
+    {onselect}
     sentence={[
       { role: "subject", batelu: ["kanjakapy"], english: ["dog+door"] },
     ]}
@@ -126,8 +179,10 @@
     All verb infinitives end in either -are, -ere, -ire, -ore, -ure, or -yre.
   </p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "are", affix: true }],
         english: ["to laugh"],
@@ -141,20 +196,24 @@
     conjugations, it gets removed. Batelu conjugates by person:
   </p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "e", affix: true }],
         english: ["I laugh"],
       },
       { role: null, batelu: [","], english: [] },
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "ave", affix: true }],
         english: ["you (sg.) laugh"],
       },
       { role: null, batelu: [","], english: [] },
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "aren", affix: true }],
         english: ["they (sg.) laugh"],
@@ -164,14 +223,17 @@
   />
   <p>By number:</p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "e", affix: true }],
         english: ["I laugh"],
       },
       { role: null, batelu: [","], english: [] },
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "et", affix: true }],
         english: ["we laugh"],
@@ -181,20 +243,24 @@
   />
   <p>By tense:</p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "a", affix: true }],
         english: ["I laughed"],
       },
       { role: null, batelu: [","], english: [] },
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "e", affix: true }],
         english: ["I laugh"],
       },
       { role: null, batelu: [","], english: [] },
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "i", affix: true }],
         english: ["I will laugh"],
@@ -204,20 +270,24 @@
   />
   <p>By aspect:</p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "e", affix: true }],
         english: ["I laugh"],
       },
       { role: null, batelu: [","], english: [] },
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "ed", affix: true }],
         english: ["I'm laughing"],
       },
       { role: null, batelu: [","], english: [] },
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "ek", affix: true }],
         english: ["I've laughed"],
@@ -227,14 +297,17 @@
   />
   <p>By intentionality:</p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "e", affix: true }],
         english: ["I laugh"],
       },
       { role: null, batelu: [","], english: [] },
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "u", affix: true }],
         english: ["I unintentionally laugh"],
@@ -247,14 +320,17 @@
     the 1st person, though, as the speaker is assumed to always be animate.
   </p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "aren", affix: true }],
         english: ["they (sg., animate) laugh"],
       },
       { role: null, batelu: [","], english: [] },
       {
+        word: "gylare",
         role: "verb",
         batelu: ["gyl", { content: "aer", affix: true }],
         english: ["it laughs"],
@@ -274,18 +350,26 @@
     modify nouns:
   </p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["wabi"], english: ["fish"] },
-      { role: "particle", batelu: ["al"], english: ["the"] },
-      { role: "modifier", batelu: ["teran"], english: ["happy"] },
+      { word: "wabi", role: "subject", batelu: ["wabi"], english: ["fish"] },
+      { word: "al", role: "particle", batelu: ["al"], english: ["the"] },
+      {
+        word: "teran",
+        role: "modifier",
+        batelu: ["teran"],
+        english: ["happy"],
+      },
     ]}
     translation="the happy fish"
   />
   <p>With the prefix "i-", they can modify verbs too:</p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "verb", batelu: ["jesere"], english: ["to eat"] },
+      { word: "jesere", role: "verb", batelu: ["jesere"], english: ["to eat"] },
       {
+        word: "teran",
         role: "modifier",
         batelu: [{ content: "i", affix: true }, "teran"],
         english: ["happi", { content: "ly", affix: true }],
@@ -295,9 +379,11 @@
   />
   <p>For phonetic reasons, this prefix turns into "ir-" when before a vowel:</p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "verb", batelu: ["jesere"], english: ["to eat"] },
+      { word: "jesere", role: "verb", batelu: ["jesere"], english: ["to eat"] },
       {
+        word: "alo",
         role: "modifier",
         batelu: [{ content: "ir", affix: true }, "alo"],
         english: ["other", { content: "ly", affix: true }],
@@ -310,10 +396,11 @@
     the time:
   </p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["wabi"], english: ["fish"] },
-      { role: "particle", batelu: ["al"], english: ["the"] },
-      { role: "modifier", batelu: ["jami"], english: ["my"] },
+      { word: "wabi", role: "subject", batelu: ["wabi"], english: ["fish"] },
+      { word: "al", role: "particle", batelu: ["al"], english: ["the"] },
+      { word: "ja", role: "modifier", batelu: ["jami"], english: ["my"] },
     ]}
     translation="my fish"
   />
@@ -323,32 +410,36 @@
     English. They can modify nouns:
   </p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["urkoz"], english: ["bear"] },
-      { role: "adposition", batelu: ["je"], english: ["at"] },
-      { role: "object", batelu: ["soj"], english: ["water"] },
+      { word: "urkoz", role: "subject", batelu: ["urkoz"], english: ["bear"] },
+      { word: "je", role: "adposition", batelu: ["je"], english: ["at"] },
+      { word: "soj", role: "object", batelu: ["soj"], english: ["water"] },
     ]}
     translation="bear in the water"
   />
   <p>And also entire sentences:</p>
   <Sentence
+    {onselect}
     sentence={[
       {
+        word: "kutere",
         role: "verb",
         batelu: ["kutecen"],
         english: ["they (sg.) are walking"],
       },
-      { role: "adposition", batelu: ["je"], english: ["at"] },
-      { role: "object", batelu: ["soj"], english: ["water"] },
+      { word: "je", role: "adposition", batelu: ["je"], english: ["at"] },
+      { word: "soj", role: "object", batelu: ["soj"], english: ["water"] },
     ]}
     translation="They are walking in the water."
   />
   <h2>Numbers</h2>
   <p>Batelu uses base 12. Numbers are put after nouns, just like modifiers:</p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["culol"], english: ["sounds"] },
-      { role: "numeral", batelu: ["awi"], english: ["eleven"] },
+      { word: "lol", role: "subject", batelu: ["culol"], english: ["sounds"] },
+      { word: "awi", role: "numeral", batelu: ["awi"], english: ["eleven"] },
     ]}
     translation="eleven sounds"
   />
@@ -357,29 +448,32 @@
     the ones digit:
   </p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["culol"], english: ["sounds"] },
-      { role: "numeral", batelu: ["do"], english: ["two"] },
-      { role: "numeral", batelu: ["izo"], english: ["twelve"] },
-      { role: "numeral", batelu: ["san"], english: ["three"] },
+      { word: "lol", role: "subject", batelu: ["culol"], english: ["sounds"] },
+      { word: "do", role: "numeral", batelu: ["do"], english: ["two"] },
+      { word: "izo", role: "numeral", batelu: ["izo"], english: ["twelve"] },
+      { word: "san", role: "numeral", batelu: ["san"], english: ["three"] },
     ]}
     translation="twenty-seven sounds (23 in dozenal)"
   />
   <p>You can leave out the ones digit when it's zero:</p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["culol"], english: ["sounds"] },
-      { role: "numeral", batelu: ["do"], english: ["two"] },
-      { role: "numeral", batelu: ["izo"], english: ["twelve"] },
+      { word: "lol", role: "subject", batelu: ["culol"], english: ["sounds"] },
+      { word: "do", role: "numeral", batelu: ["do"], english: ["two"] },
+      { word: "izo", role: "numeral", batelu: ["izo"], english: ["twelve"] },
     ]}
     translation="twenty-four sounds (20 in dozenal)"
   />
   <p>You can leave out the twelves digit when it's one:</p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["culol"], english: ["sounds"] },
-      { role: "numeral", batelu: ["izo"], english: ["twelve"] },
-      { role: "numeral", batelu: ["san"], english: ["three"] },
+      { word: "lol", role: "subject", batelu: ["culol"], english: ["sounds"] },
+      { word: "izo", role: "numeral", batelu: ["izo"], english: ["twelve"] },
+      { word: "san", role: "numeral", batelu: ["san"], english: ["three"] },
     ]}
     translation="fifteen sounds (13 in dozenal)"
   />
@@ -393,8 +487,9 @@
     "awi"):
   </p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["culol"], english: ["sounds"] },
+      { word: "lol", role: "subject", batelu: ["culol"], english: ["sounds"] },
       { role: "numeral", batelu: ["W3"], english: ["123"] },
     ]}
     translation="123 sounds (A3 in dozenal)"
@@ -404,15 +499,18 @@
     article is required here:
   </p>
   <Sentence
+    {onselect}
     sentence={[
-      { role: "subject", batelu: ["lol"], english: ["sound"] },
-      { role: "particle", batelu: ["al"], english: ["the"] },
-      { role: "particle", batelu: ["law"], english: ["nth"] },
-      { role: "numeral", batelu: ["san"], english: ["three"] },
+      { word: "lol", role: "subject", batelu: ["lol"], english: ["sound"] },
+      { word: "al", role: "particle", batelu: ["al"], english: ["the"] },
+      { word: "law", role: "particle", batelu: ["law"], english: ["nth"] },
+      { word: "san", role: "numeral", batelu: ["san"], english: ["three"] },
     ]}
     translation="the third sound"
   />
 </main>
+
+<WordDrawer bind:word={selected} {navigate} />
 
 <style>
   #batelu {

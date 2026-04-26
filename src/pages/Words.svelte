@@ -246,6 +246,7 @@
     {@render wordTypeButton("interjection", "Interjections")}
     {@render wordTypeButton("adposition", "Adpositions")}
     {@render wordTypeButton("conjunction", "Conjunctions")}
+    {@render wordTypeButton("pronoun", "Pronouns")}
   </div>
 </main>
 <section class="cards-wrap">
@@ -466,6 +467,7 @@
     --accent-numeral: #ffcc33;
     --accent-interjection: color-mix(in srgb, #fff652 90%, #fff 0%);
     --accent-adposition: color-mix(in srgb, #ff52e2 90%, #fff 0%);
+    --accent-pronoun: color-mix(in srgb, #5852ff 90%, #fff 0%);
   }
 
   .card .accent.accent-noun {
@@ -494,6 +496,10 @@
 
   .card .accent.accent-adposition {
     background: color-mix(in srgb, var(--accent-adposition) 90%, #fff 0%);
+  }
+
+  .card .accent.accent-pronoun {
+    background: color-mix(in srgb, var(--accent-pronoun) 90%, #fff 0%);
   }
 
   .card:hover,
