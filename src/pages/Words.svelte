@@ -46,9 +46,6 @@
   let q = "";
   let sortBy = "best-match";
   let selected = null;
-  $: {
-    console.log(selected);
-  }
   let drawerEl;
   let initialized = false;
 
