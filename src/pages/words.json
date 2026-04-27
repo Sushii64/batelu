@@ -2041,5 +2041,47 @@
     "etymology": ["Romanian", "lucru", "thing"],
     "type": "particle",
     "date": "26-04-2026"
+  },
+  {
+    "word": "pyled",
+    "definition": "fire",
+    "etymology": ["Estonian", "pōled", "you burn"],
+    "type": "noun",
+    "date": "26-04-2026"
+  },
+  {
+    "word": "jipi",
+    "definition": "yippee, hooray",
+    "etymology": false,
+    "type": "interjection",
+    "date": "26-04-2026"
+  },
+  {
+    "word": "ory",
+    "definition": "many, a lot",
+    "etymology": ["Oroqen", "orə", "mountain"],
+    "type": "modifier",
+    "date": "26-04-2026"
+  },
+  {
+    "word": "keresere",
+    "definition": "to find",
+    "etymology": ["Hungarian", "keres", "to look for"],
+    "type": "verb",
+    "date": "26-04-2026"
+  },
+  {
+    "word": "bezere",
+    "definition": "to learn",
+    "etymology": ["Hebrew", ["בית ספר", "bet sefer"], "school"],
+    "type": "verb",
+    "date": "26-04-2026"
+  },
+  {
+    "word": "doza",
+    "definition": "short",
+    "etymology": ["Chechen", ["доца", "dotsa"], "short"],
+    "type": "modifier",
+    "date": "26-04-2026"
   }
 ]

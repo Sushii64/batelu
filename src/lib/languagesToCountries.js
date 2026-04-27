@@ -181,4 +181,7 @@ export const languagesToCountries = {
   Baoule: ["ci"],
   Fijian: ["fj"],
   Portuguese: ["pt", "br", "ao", "cv", "tl", "gq", "gw", "mo", "mz", "st"],
+  Estonian: ["ee"],
+  Oroqen: ["ru", "cn"],
+  Chechen: ["ru"],
 };
