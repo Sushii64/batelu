@@ -52,7 +52,8 @@ export const numberToBatelu = (n) => {
       digits,
       (LARGER_NUMBER_SEPARATOR_WORDS.length - i) * 3,
     );
-    if (chunk) s.push(`${chunk} ${word}`);
+    if (chunk === NUMBERS[1]) s.push(word);
+    else if (chunk) s.push(`${chunk} ${word}`);
   }
   s.push(chunkOfThrees(digits, 0));
   return s.join(" ");
