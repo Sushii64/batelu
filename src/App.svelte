@@ -9,6 +9,8 @@
     import Phonology from './pages/Phonology.svelte';
     import Inflections from './pages/Inflections.svelte';
     import Etymologies from './pages/Etymologies.svelte';
+    import Tools from './pages/tools/Tools.svelte';
+    import NumbersTool from './pages/tools/Numbers.svelte';
 
     /** @type {import("svelte").Component<{}> | import("svelte").Component<{ navigate: (path: string) => void }>} */
     let Component = NotFound;
@@ -45,6 +47,14 @@
             case '/etymology':
                 Component = Etymologies;
                 break;
+            
+            case '/tools':
+                Component = Tools;
+                break;
+            
+            case '/tools/numbers':
+                Component = NumbersTool;
+                break;
 
             default:
                 Component = NotFound;
@@ -74,6 +84,7 @@
 	<a href="/about" on:click|preventDefault={() => navigate('/about')}>About</a>
 	<a href="/phono" on:click|preventDefault={() => navigate('/phono')}>Phonology</a>
 	<a href="/inflect" on:click|preventDefault={() => navigate('/inflect')}>Inflections</a>
+	<a href="/tools" on:click|preventDefault={() => navigate("/tools")}>Tools</a>
 </nav>
 
 <svelte:component this={Component} {navigate} />
