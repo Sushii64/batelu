@@ -2082,6 +2082,41 @@
     "definition": "short",
     "etymology": ["Chechen", ["доца", "dotsa"], "short"],
     "type": "modifier",
-    "date": "26-04-2026"
+    "date": "27-04-2026"
+  },
+  {
+    "word": "kormo",
+    "definition": "thick",
+    "etymology": ["Greek", ["κορμός", "kormós"], "trunk"],
+    "type": "modifier",
+    "date": "27-04-2026"
+  },
+  {
+    "word": "parakare",
+    "definition": "should, (imperative verb)",
+    "etymology": ["Greek", ["παρακαλώ", "parakaló"], "please"],
+    "type": "verb",
+    "date": "27-04-2026"
+  },
+  {
+    "word": "oxutjun",
+    "definition": "May (month)",
+    "etymology": ["Armenian", ["փոփոխություն", "pʻopʻoxutʻyun"], "transition"],
+    "type": "noun",
+    "date": "27-04-2026"
+  },
+  {
+    "word": "xalat",
+    "definition": "long",
+    "etymology": ["Turkish", "halat", "rope"],
+    "type": "modifier",
+    "date": "27-04-2026"
+  },
+  {
+    "word": "sistajar",
+    "definition": "server, protocol",
+    "etymology": ["Hindi", ["शिष्टाचार", "śiṣṭācār"], "etiquette"],
+    "type": "noun",
+    "date": "27-04-2026"
   }
 ]
