@@ -83,15 +83,16 @@ export const toIPA = (word) => {
     }
     switch (sounds.segments[i].type) {
       case "vowel":
-        if (
-          sounds.segments[i + 1]?.type === "consonant" &&
-          sounds.segments[i + 2]?.type !== "vowel"
-        ) {
-          ipa += sounds.segments[i].ipa + sounds.segments[i + 1].ipa;
-          i += 2;
-        } else if (i === 0) {
+        if (i === 0) {
           ipa += sounds.segments[i].ipa;
           i++;
+          if (
+            sounds.segments[i]?.type === "consonant" &&
+            sounds.segments[i + 1]?.type !== "vowel"
+          ) {
+            ipa += sounds.segments[i].ipa;
+            i++;
+          }
         } else {
           return {
             error: true,

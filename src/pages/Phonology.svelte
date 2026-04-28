@@ -5,8 +5,7 @@
 	<h1>Phonology</h1>
 
 	<h2>Syllables</h2>
-	<p>Allowed syllable structures are CV, CVC, VC, and V (only as a starting syllable)</p>
-	<p>CV, VC turns into CVVC as a diphthong</p>
+	<p>Allowed syllable structures are CV, CVC, CVVC; and VC and V at the beginning of a word</p>
 	<p>The sound's spelling is indicated in brackets after the sound. If there are no brackets, the spelling is the same as the IPA symbol.</p>
 
 	<h2>Vowels</h2>
