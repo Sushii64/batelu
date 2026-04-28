@@ -81,68 +81,73 @@
         <label class="detail-label">etymology</label>
         {#snippet etymologyDescription(etymology)}
           {#if etymology === false}
-            a priori
+            <li>a priori</li>
           {:else if Array.isArray(etymology)}
             {#if Array.isArray(etymology[0])}
               {#each etymology as subetymology, i}
                 {@render etymologyDescription(subetymology)}
-                {#if i !== etymology[0].length - 1}
-                  <br />
-                {/if}
               {/each}
             {:else if Array.isArray(etymology[1])}
-              {#if etymology.length > 2 && etymology[2]}
-                <span class="ety-lang">{etymology[0]}</span>
-                <em class="ety-word">{etymology[1][0]}</em>
-                (<span class="ety-roman">{etymology[1][1]}</span>) "<span
-                  class="ety-gloss">{etymology[2]}</span
-                >"
-              {:else}
-                <span class="ety-lang">{etymology[0]}</span>
-                <em class="ety-word">{etymology[1][0]}</em>
-                (<span class="ety-roman">{etymology[1][1]}</span>)
-              {/if}
+              <li>
+                {#if etymology.length > 2 && etymology[2]}
+                  <span class="ety-lang">{etymology[0]}</span>
+                  <em class="ety-word">{etymology[1][0]}</em>
+                  (<span class="ety-roman">{etymology[1][1]}</span>) "<span
+                    class="ety-gloss">{etymology[2]}</span
+                  >"
+                {:else}
+                  <span class="ety-lang">{etymology[0]}</span>
+                  <em class="ety-word">{etymology[1][0]}</em>
+                  (<span class="ety-roman">{etymology[1][1]}</span>)
+                {/if}
+              </li>
             {:else if etymology.length > 2 && etymology[2]}
-              <span class="ety-lang">{etymology[0]}</span>
-              <em class="ety-word">{etymology[1]}</em>
-              "<span class="ety-gloss">{etymology[2]}</span>"
+              <li>
+                <span class="ety-lang">{etymology[0]}</span>
+                <em class="ety-word">{etymology[1]}</em>
+                "<span class="ety-gloss">{etymology[2]}</span>"
+              </li>
             {:else if etymology[0] === "Batelu"}
               {@const word = words.find((word) => word.word === etymology[1])}
-              <span class="ety-lang">{etymology[0]}</span>
-              <em class="ety-word"
-                ><a
-                  href={(() => {
-                    const url = new URL(location.href);
-                    url.searchParams.set("word", etymology[1]);
-                    return url.toString();
-                  })()}
-                  onclick={(e) => {
-                    e.preventDefault();
-                    open(word);
-                  }}>{etymology[1]}</a
-                ></em
-              >
-              {#if word}
-                "<span class="ety-gloss">{word.definition.split(", ")[0]}</span
-                >"
-                <br />
-                <span class="ety-further">
-                  ← {@render etymologyDescription(word.etymology)}
-                </span>
-              {:else}
-                <span class="ety-error">word not found</span>
-              {/if}
+              <li>
+                <span class="ety-lang">{etymology[0]}</span>
+                <em class="ety-word"
+                  ><a
+                    href={(() => {
+                      const url = new URL(location.href);
+                      url.searchParams.set("word", etymology[1]);
+                      return url.toString();
+                    })()}
+                    onclick={(e) => {
+                      e.preventDefault();
+                      open(word);
+                    }}>{etymology[1]}</a
+                  ></em
+                >
+                {#if word}
+                  "<span class="ety-gloss"
+                    >{word.definition.split(", ")[0]}</span
+                  >"
+                  <ul>
+                    {@render etymologyDescription(word.etymology)}
+                  </ul>
+                {:else}
+                  <span class="ety-error">word not found</span>
+                {/if}
+              </li>
             {:else}
-              <span class="ety-lang">{etymology[0]}</span>
-              <em class="ety-word">{etymology[1]}</em>
+              <li>
+                <span class="ety-lang">{etymology[0]}</span>
+                <em class="ety-word">{etymology[1]}</em>
+              </li>
             {/if}
           {:else}
-            {etymology}
+            <li>{etymology}</li>
           {/if}
         {/snippet}
-        <p class="detail-text">
+        <ul class="detail-text detail-etymology">
           {@render etymologyDescription(wordData.etymology)}
-        </p>
+        </ul>
 
         {#if wordData.date}
           <label class="detail-label">creation date</label>
@@ -309,6 +314,15 @@
     font-size: 1.18rem;
     line-height: 1.65;
     color: var(--fg);
+  }
+
+  .detail-etymology ul {
+    list-style: "← ";
+    margin: 0;
+  }
+  .detail-etymology {
+    list-style: "";
+    padding: 0;
   }
 
   /* Etymology accents */
