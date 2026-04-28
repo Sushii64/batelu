@@ -791,7 +791,7 @@
             <td>cukelemi</td>
           </tr>
           <tr>
-            <td rowspan="2" class="horizontal-header">
+            <td rowspan="2" class="horizontal-header td-bottom">
               <b>4th Person</b>
             </td>
             <td class="horizontal-header"><b>Animate</b></td>
@@ -800,8 +800,15 @@
             <td>cunu</td>
             <td>cunumi</td>
           </tr>
-          <tr>
+          <tr class="tr-bottom">
             <td class="horizontal-header"><b>Inanimate</b></td>
+            <td class="inflections-secondary">(no word yet)</td>
+            <td class="inflections-secondary">(no word yet)</td>
+            <td class="inflections-secondary">(no word yet)</td>
+            <td class="inflections-secondary">(no word yet)</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="horizontal-header"><b>Impersonal</b></td>
             <td class="inflections-secondary">(no word yet)</td>
             <td class="inflections-secondary">(no word yet)</td>
             <td class="inflections-secondary">(no word yet)</td>
