@@ -6,7 +6,6 @@
   { "description": "VC syllable structure", "tags": ["phonotactics", "syllables"] },
   { "description": "First-person pronouns mark day/night", "tags": ["grammar", "pronouns"] },
   { "description": "Flexible word order (no strict default)", "tags": ["grammar", "word order"] },
-  { "description": "Word-order markers realized with affixes", "tags": ["grammar", "word order"] },
   { "description": "Animate/inanimate distinction (except first person)", "tags": ["grammar", "pronouns", "verbs"] },
   { "description": "No gender distinction", "tags": ["grammar", "pronouns"] },
   { "description": "Agglutinative morphology (affix attachment)", "tags": ["grammar", "affixes"] },
@@ -33,7 +32,6 @@
   { "description": "Use infinitive in contexts like “teshe onore” (“I want to be”)", "tags": ["grammar", "verbs", "conjugation"] },
   { "description": "Honorifics follow the noun as suffixes (e.g., Japanese -san, -sama)", "tags": ["grammar", "honorifics", "suffixes"] },
   { "description": "Honorifics may be separated with a dash", "tags": ["grammar", "honorifics", "optional"] },
-  { "description": "Separate diminutive honorific (e.g., Japanese -chan, -kun)", "tags": ["grammar", "honorifics"] },
   { "description": "Honorifics are optional but preferred for respect", "tags": ["grammar", "honorifics", "optional"] },
   { "description": "Do not use honorifics for self-reference", "tags": ["grammar", "honorifics"] },
   { "description": "First-person day/night distinction is optional", "tags": ["grammar", "pronouns", "optional"] },
@@ -66,5 +64,11 @@
   { "description": "The letter names of vowels are the vowels themselves", "tags": ["orthography", "words"]},
   { "description": "The letter names of consonants are the sound plus a", "tags": ["orthography", "words"]},
   { "description": "Statements that couldn't possibly have any intentionality behind them use intentional verbs", "tags": ["grammar", "verbs"]},
-  { "description": "Polygons with more angles than a hexagon are formed by the number plus mojan", "tags": ["words"]}
+  { "description": "Polygons with more angles than a hexagon are formed by the number plus mojan", "tags": ["words"]},
+  { "description": "'karka' can modify anything to turn it vulgar", "tags": ["grammar", "words"]},
+  { "description": "Sentences may optionally be capitalized", "tags": ["orthography"]},
+  { "description": "Time is expressed as cubun H cubun M cusego S, with each part being optional", "tags": ["words"]},
+  { "description": "The number zero goes with the singular", "tags": ["grammar", "words"]},
+  { "description": "Particles before the nouns for non-SVO word orders", "tags": ["grammar", "words", "word order"]},
+  { "description": "The question particle 'ko' is always included on questions", "tags": ["grammar", "words"]}
 ]

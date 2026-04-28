@@ -93,11 +93,12 @@
     translation="Do you eat noodles?"
   />
   <p>
-    Open ended questions can be created with more specific interrogative words:
+    Open ended questions can be created with more specific interrogative words, and also include 'ko':
   </p>
   <Sentence
     {onselect}
     sentence={[
+      { word: "ko", role: "particle", batelu: ["ko"], english: ["?"] },
       { word: "va2", role: "particle", batelu: ["va"], english: ["what"] },
       {
         word: "jesere",

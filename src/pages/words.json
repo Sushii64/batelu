@@ -68,7 +68,7 @@
   },
   {
     "word": "onore",
-    "definition": "to be",
+    "definition": "to be, it is (of time, singular)",
     "etymology": ["Finnish", "on", "there is"],
     "type": "verb",
     "date": "18-05-2025"
@@ -593,7 +593,7 @@
   },
   {
     "word": "tadmire",
-    "definition": "to destroy",
+    "definition": "to destroy, to be an age (past tense)",
     "etymology": ["Arabic", ["تدمير", "tadmīr"], "destruction"],
     "type": "verb",
     "date": "25-01-2026"
@@ -1289,7 +1289,7 @@
   },
   {
     "word": "defnijo",
-    "definition": "using",
+    "definition": "using, in (a language)",
     "etymology": ["Welsh", "defnyddio", "to use"],
     "type": "adposition",
     "date": "06-04-2026"
@@ -2082,6 +2082,16 @@
     "definition": "short",
     "etymology": ["Chechen", ["доца", "dotsa"], "short"],
     "type": "modifier",
+    "date": "27-04-2026"
+  },
+  {
+    "word": "ajobyre",
+    "definition": "to disagree",
+    "etymology": [
+      ["Batelu", "ajarore"],
+      ["Batelu", "byr"]
+    ],
+    "type": "verb",
     "date": "27-04-2026"
   },
   {
