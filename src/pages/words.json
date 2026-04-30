@@ -1963,6 +1963,13 @@
     "date": "24-04-2026"
   },
   {
+    "word": "nu",
+    "definition": "fourth person pronoun, they",
+    "etymology": ["Unnamed Conlang 3", "nu"],
+    "type": "pronoun",
+    "date": "24-04-2026"
+  },
+  {
     "word": "metru",
     "definition": "meter (unit of length)",
     "etymology": ["Romanian", "metru", "meter"],
@@ -2128,5 +2135,131 @@
     "etymology": ["Hindi", ["शिष्टाचार", "śiṣṭācār"], "etiquette"],
     "type": "noun",
     "date": "27-04-2026"
+  },
+  {
+    "word": "incara",
+    "definition": "August (month)",
+    "etymology": ["Arabic", ["انصهر", "inşahara"], "to melt"],
+    "type": "noun",
+    "date": "28-04-2026"
+  },
+  {
+    "word": "xunta",
+    "definition": "July (month)",
+    "etymology": ["Afrikaans", "groente", "vegetables"],
+    "type": "noun",
+    "date": "28-04-2026"
+  },
+  {
+    "word": "paljatso",
+    "definition": "April (month)",
+    "etymology": ["Turkish", "palyaço", "clown"],
+    "type": "noun",
+    "date": "28-04-2026"
+  },
+  {
+    "word": "vaska",
+    "definition": "small",
+    "etymology": ["Polish", "ważka", "dragonfly"],
+    "type": "modifier",
+    "date": "28-04-2026"
+  },
+  {
+    "word": "cyrek",
+    "definition": "heart (organ, playing card)",
+    "etymology": ["Korean", ["혈액", "hyeoraek"], "blood"],
+    "type": "noun",
+    "date": "28-04-2026"
+  },
+  {
+    "word": "kalit",
+    "definition": "key",
+    "etymology": ["Uzbek", "kalit", "key"],
+    "type": "noun",
+    "date": "29-04-2026"
+  },
+  {
+    "word": "uzhan",
+    "definition": "test",
+    "etymology": ["Malay", "ujian", "test"],
+    "type": "noun",
+    "date": "29-04-2026"
+  },
+  {
+    "word": "koli",
+    "definition": "when",
+    "etymology": ["Ukrainian", ["коли", "koli"], "when"],
+    "type": "conjunction",
+    "date": "29-04-2026"
+  },
+  {
+    "word": "nembo",
+    "definition": "lemon",
+    "etymology": ["Hindi", ["नींबू", "nimbū"], "lemon"],
+    "type": "noun",
+    "date": "29-04-2026"
+  },
+  {
+    "word": "ojkore",
+    "definition": "to live",
+    "etymology": ["Guarani", "oikove haguā", "to live"],
+    "type": "verb",
+    "date": "29-04-2026"
+  },
+  {
+    "word": "ypro",
+    "definition": "one, you (impersonal pronoun)",
+    "etymology": ["Greek", ["πρόσωπο", "prósopo"], "character"],
+    "type": "pronoun",
+    "date": "29-04-2026"
+  },
+  {
+    "word": "okulus",
+    "definition": "eye",
+    "etymology": ["Latin", "oculus", "eye"],
+    "type": "noun",
+    "date": "29-04-2026"
+  },
+  {
+    "word": "gury",
+    "definition": "mouth",
+    "etymology": ["Romanian", "gură", "mouth"],
+    "type": "noun",
+    "date": "30-04-2026"
+  },
+  {
+    "word": "daraxty",
+    "definition": "December (month)",
+    "etymology": ["Tahik", ["дарахт", "daraxt"], "tree"],
+    "type": "noun",
+    "date": "30-04-2026"
+  },
+  {
+    "word": "telu",
+    "definition": "why",
+    "etymology": ["Finnish", "kuulustelu", "interrogation"],
+    "type": "particle",
+    "date": "30-04-2026"
+  },
+  {
+    "word": "idango",
+    "definition": "September (month)",
+    "etymology": ["Kikuyu", "ithangū", "leaf"],
+    "type": "noun",
+    "date": "30-04-2026"
+  },
+  {
+    "word": "byrawyx",
+    "definition": "October (month)",
+    "etymology": ["Welsh", "brawychus", "scary"],
+    "type": "noun",
+    "date": "30-04-2026"
+  },
+  {
+    "word": "darezhi",
+    "definition": "November (month)",
+    "etymology": ["Azerbaijani", "darıxdırıcı", "boring"],
+    "type": "noun",
+    "date": "30-04-2026"
   }
 ]
