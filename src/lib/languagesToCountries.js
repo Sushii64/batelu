@@ -185,4 +185,6 @@ export const languagesToCountries = {
   Oroqen: ["ru", "cn"],
   Chechen: ["ru"],
   Armenian: ["am"],
+  Uzbek: ["uz"],
+  Kikuyu: ["ke"],
 };

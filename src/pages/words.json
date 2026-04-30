@@ -2230,7 +2230,7 @@
   {
     "word": "daraxty",
     "definition": "December (month)",
-    "etymology": ["Tahik", ["дарахт", "daraxt"], "tree"],
+    "etymology": ["Tajik", ["дарахт", "daraxt"], "tree"],
     "type": "noun",
     "date": "30-04-2026"
   },
@@ -2259,6 +2259,20 @@
     "word": "darezhi",
     "definition": "November (month)",
     "etymology": ["Azerbaijani", "darıxdırıcı", "boring"],
+    "type": "noun",
+    "date": "30-04-2026"
+  },
+  {
+    "word": "baslamak",
+    "definition": "January (month)",
+    "etymology": ["Turkish", "başlamak", "to begin"],
+    "type": "noun",
+    "date": "30-04-2026"
+  },
+  {
+    "word": "sekoftan",
+    "definition": "March (month)",
+    "etymology": ["Persian", ["شکفتن", "šekoftan"], "to bloom"],
     "type": "noun",
     "date": "30-04-2026"
   }

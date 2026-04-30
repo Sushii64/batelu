@@ -17,6 +17,7 @@
     "This Thing",
     "Toki Pona",
     "Sanskrit",
+    "Unnamed Conlang 3",
   ]);
   const missingLanguages = new Set();
   const countryAmounts = new Map();
