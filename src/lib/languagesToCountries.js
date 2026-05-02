@@ -187,4 +187,6 @@ export const languagesToCountries = {
   Armenian: ["am"],
   Uzbek: ["uz"],
   Kikuyu: ["ke"],
+  Inuktitut: ["ca"],
+  "Tok Pisin": ["pg"],
 };

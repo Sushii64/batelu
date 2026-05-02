@@ -1985,7 +1985,7 @@
   },
   {
     "word": "anpasa",
-    "definition": "video, moving picture  ",
+    "definition": "video, moving picture, animation",
     "etymology": ["Hebrew", ["הַנפָּשָׁה", "hanpashá"], "animation"],
     "type": "noun",
     "date": "25-04-2026"
@@ -2275,5 +2275,103 @@
     "etymology": ["Persian", ["شکفتن", "šekoftan"], "to bloom"],
     "type": "noun",
     "date": "30-04-2026"
+  },
+  {
+    "word": "letni",
+    "definition": "June (month)",
+    "etymology": ["Czech", "letní", "summer"],
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "kangore",
+    "definition": "to give, to export, to upload",
+    "etymology": ["Javanese", "kanggo menehi", "to give"],
+    "type": "verb",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "manoja",
+    "definition": "February (month)",
+    "etymology": ["Inuktitut", ["ᒪᐅᔭ", "amoya"], "deep, soft snow"],
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "kamatan",
+    "definition": "Venus (planet)",
+    "etymology": ["Lao", ["ກຳມະຖັນ", "kam ma than"], "sulfur"],
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "rinim",
+    "definition": "Saturn (planet)",
+    "etymology": ["Tok Pisin", "ringim", "ring"],
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "budan",
+    "definition": "nose",
+    "etymology": ["Tajik", ["бӯйидан", "büyyidan"], "to smell"],
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "xajzha",
+    "definition": "tooth",
+    "etymology": ["Japanese", ["歯医者", "haisha"], "dentist"],
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "rekjan",
+    "definition": "hand",
+    "etymology": false,
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "ghaghi",
+    "definition": "Neptune (planet)",
+    "etymology": false,
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "punjur",
+    "definition": "origin, source",
+    "etymology": ["Finnish", "puunjuuri", "tree root"],
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "ghazemare",
+    "definition": "to get, to import, to download",
+    "etymology": ["Catalan", "emmagatzemar", "to store"],
+    "type": "verb",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "warna",
+    "definition": "kind, sort",
+    "etymology": ["Indonesian", "warna", "color"],
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "tanur",
+    "definition": "electronic tool, appliance",
+    "etymology": ["Persian", ["تنور", "tanur"], "oven"],
+    "type": "noun",
+    "date": "01-05-2026"
+  },
+  {
+    "word": "nawista",
+    "definition": "document, file",
+    "etymology": ["Persian", ["نوشته", "nawišta"], "writing"],
+    "type": "noun",
+    "date": "01-05-2026"
   }
 ]
