@@ -1,3 +1,9 @@
+<!--
+  TODO:
+  - Comparative/superlative
+  - Quotative particle
+-->
+
 <script>
   import Sentence from "../components/Sentence.svelte";
   import WordDrawer from "../components/WordDrawer.svelte";

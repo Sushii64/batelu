@@ -70,6 +70,13 @@
       window.history.replaceState({}, "", url.toString());
     }
   }
+
+  const epentheticConsonant = (cons) =>
+    validatedWord.word
+      ? /^[aeiouy]/.test(validatedWord.word)
+        ? cons
+        : ""
+      : `(${cons})`;
 </script>
 
 <main class="container">
@@ -685,11 +692,7 @@
               >
             </td>
             <td>
-              cu{validatedWord.word
-                ? /^[aeiouy]/.test(validatedWord.word)
-                  ? "l"
-                  : ""
-                : "(l)"}<span class="inflections-secondary"
+              cu{epentheticConsonant("l")}<span class="inflections-secondary"
                 >{validatedWord.word || "-"}</span
               >
             </td>
@@ -700,25 +703,48 @@
       <table class="fixed-table">
         <thead>
           <tr>
+            <th></th>
             <th>Adjective</th>
             <th>Adverb</th>
           </tr>
         </thead>
         <tbody>
+          {#snippet adverb()}
+            i{epentheticConsonant("r")}<span class="inflections-secondary"
+              >{validatedWord.word || "-"}</span
+            >
+          {/snippet}
           <tr>
+            <td>Positive</td>
             <td>
               <span class="inflections-secondary"
                 >{validatedWord.word || "(no change)"}</span
               >
             </td>
             <td>
-              i{validatedWord.word
-                ? /^[aeiouy]/.test(validatedWord.word)
-                  ? "r"
-                  : ""
-                : "(r)"}<span class="inflections-secondary"
+              {@render adverb()}
+            </td>
+          </tr>
+          <tr>
+            <td>Comparative</td>
+            <td>
+              <span class="inflections-secondary"
                 >{validatedWord.word || "-"}</span
-              >
+              >lam
+            </td>
+            <td>
+              {@render adverb()}lam
+            </td>
+          </tr>
+          <tr>
+            <td>Superlative</td>
+            <td>
+              <span class="inflections-secondary"
+                >{validatedWord.word || "-"}</span
+              >lam
+            </td>
+            <td>
+              {@render adverb()}fe
             </td>
           </tr>
         </tbody>

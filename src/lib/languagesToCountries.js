@@ -189,4 +189,10 @@ export const languagesToCountries = {
   Kikuyu: ["ke"],
   Inuktitut: ["ca"],
   "Tok Pisin": ["pg"],
+  Ga: ["gh"],
+  "Basque-Icelandic Pidgin": ["is"],
+  Chamicuro: ["pe"],
+  Assamese: ["in"],
+  Filipino: ["ph"],
+  Yoruba: ["bj", "ng", "tg"],
 };

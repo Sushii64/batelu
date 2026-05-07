@@ -2373,5 +2373,96 @@
     "etymology": ["Persian", ["نوشته", "nawišta"], "writing"],
     "type": "noun",
     "date": "01-05-2026"
+  },
+  {
+    "word": "rosimu",
+    "definition": "Mercury (planet)",
+    "etymology": ["Portuguese", "próximo", "close"],
+    "type": "modifier",
+    "date": "02-05-2026"
+  },
+  {
+    "word": "oblan",
+    "definition": "Jupiter (planet)",
+    "etymology": ["Ga", "oblaŋ", "giant"],
+    "type": "noun",
+    "date": "02-05-2026"
+  },
+  {
+    "word": "bustana",
+    "definition": "tail",
+    "etymology": ["Basque-Icelandic Pidgin", "bustana", "tail"],
+    "type": "noun",
+    "date": "03-05-2026"
+  },
+  {
+    "word": "olasi",
+    "definition": "ear",
+    "etymology": ["Chamicuro", "olashi", "wave"],
+    "type": "noun",
+    "date": "03-05-2026"
+  },
+  {
+    "word": "kivanci",
+    "definition": "Mars (planet)",
+    "etymology": ["Hungarian", "kiváncsiság", "curiosity"],
+    "type": "noun",
+    "date": "03-05-2026"
+  },
+  {
+    "word": "torama",
+    "definition": "pentagon",
+    "etymology": ["Assamese", ["তৰামাছ", "toramas"], "starfish"],
+    "type": "noun",
+    "date": "03-05-2026"
+  },
+  {
+    "word": "bujogh",
+    "definition": "hexagon",
+    "etymology": ["Filipino", "bubuyog", "bee"],
+    "type": "noun",
+    "date": "03-05-2026"
+  },
+  {
+    "word": "kyx",
+    "definition": "(quotative particle)",
+    "etymology": ["Hindi", ["कहना", "kahnā"], "to say"],
+    "type": "particle",
+    "date": "03-05-2026"
+  },
+  {
+    "word": "on",
+    "definition": "to (a place)",
+    "etymology": ["Batelu", "no"],
+    "type": "adposition",
+    "date": "03-05-2026"
+  },
+  {
+    "word": "witreun",
+    "definition": "Uranus (planet)",
+    "etymology": ["Latin", "vitreum", "cyan"],
+    "type": "noun",
+    "date": "04-05-2026"
+  },
+  {
+    "word": "xatlev",
+    "definition": "place, location",
+    "etymology": ["Cherokee", ["ᎭᏢ", "hatlv"], "where"],
+    "type": "noun",
+    "date": "04-05-2026"
+  },
+  {
+    "word": "arakun",
+    "definition": "sibling",
+    "etymology": ["Yoruba", "arakunrin", "sibling"],
+    "type": "noun",
+    "date": "04-05-2026"
+  },
+  {
+    "word": "tarax",
+    "definition": "similar",
+    "etymology": ["Urdu", ["اسی طرح", "tarah se"], "likewise"],
+    "type": "modifier",
+    "date": "05-05-2026"
   }
 ]
