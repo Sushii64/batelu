@@ -15,7 +15,7 @@
 
 <main class="container">
   <ToolsHeader {navigate}>nimrapawi</ToolsHeader>
-  Conert numbers to and from Batelu's dozenal system. See the About page for further
+  Convert numbers to and from Batelu's dozenal system. See the About page for further
   information on the system.
   <h2>Decimal to Batelu</h2>
   <label>
