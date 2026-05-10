@@ -195,4 +195,7 @@ export const languagesToCountries = {
   Assamese: ["in"],
   Filipino: ["ph"],
   Yoruba: ["bj", "ng", "tg"],
+  "S'gaw Karen": ["mm", "th"],
+  Khmer: ["kh"],
+  Greenlandic: ["gl"],
 };

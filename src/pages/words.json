@@ -2464,5 +2464,75 @@
     "etymology": ["Urdu", ["اسی طرح", "tarah se"], "likewise"],
     "type": "modifier",
     "date": "05-05-2026"
+  },
+  {
+    "word": "pelapel",
+    "definition": "spicy",
+    "etymology": ["Hebrew", ["פלפל", "pilpel"], "pepper"],
+    "type": "modifier",
+    "date": "08-05-2026"
+  },
+  {
+    "word": "takwi",
+    "definition": "sweet",
+    "etymology": ["S'gaw Karen", ["တကွံသၣ်", "ta kwee thà"], "banana"],
+    "type": "modifier",
+    "date": "09-05-2026"
+  },
+  {
+    "word": "karid",
+    "definition": "bitter",
+    "etymology": ["Greek", ["καρύδι", "karýdi"], "walnut"],
+    "type": "modifier",
+    "date": "09-05-2026"
+  },
+  {
+    "word": "kendaj",
+    "definition": "elbow",
+    "etymology": ["Khmer", ["កែងដៃ", "kaeng day"], "elbow"],
+    "type": "noun",
+    "date": "09-05-2026"
+  },
+  {
+    "word": "ramuzhu",
+    "definition": "laggy, unreliable, down",
+    "etymology": ["Portuguese", "caramujo", "snail"],
+    "type": "modifier",
+    "date": "09-05-2026"
+  },
+  {
+    "word": "tintezo",
+    "definition": "Pluto (dwarf planet)",
+    "etymology": ["Esperanto", "estinteco", "past"],
+    "type": "noun",
+    "date": "10-05-2026"
+  },
+  {
+    "word": "izim",
+    "definition": "name",
+    "etymology": ["Turkish", "isim", "name"],
+    "type": "noun",
+    "date": "10-05-2026"
+  },
+  {
+    "word": "xa",
+    "definition": "for (beneficiary of an action)",
+    "etymology": ["Spanish", "ventaja", "advantage"],
+    "type": "adposition",
+    "date": "10-05-2026"
+  },
+  {
+    "word": "taly",
+    "definition": "shoulder",
+    "etymology": ["Greenlandic", "taleq", "arm"],
+    "type": "noun",
+    "date": "10-05-2026"
+  },
+  {
+    "word": "ukus",
+    "definition": "bite",
+    "etymology": ["Russian", ["укус", "ukus"], "bite"],
+    "type": "noun",
+    "date": "10-05-2026"
   }
 ]
