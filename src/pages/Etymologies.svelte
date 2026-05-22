@@ -18,6 +18,7 @@
     "Toki Pona",
     "Sanskrit",
     "Unnamed Conlang 3",
+    "Esperanto"
   ]);
   const missingLanguages = new Set();
   const countryAmounts = new Map();

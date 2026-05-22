@@ -2534,5 +2534,238 @@
     "etymology": ["Russian", ["укус", "ukus"], "bite"],
     "type": "noun",
     "date": "10-05-2026"
+  },
+  {
+    "word": "vidro",
+    "definition": "glass",
+    "etymology": ["Portuguese", "vidro", "glass"],
+    "type": "noun",
+    "date": "11-05-2026"
+  },
+  {
+    "word": "nimbu",
+    "definition": "sour",
+    "etymology": ["Sanskrit", ["निम्बू", "nimbū"], "lime"],
+    "type": "modifier",
+    "date": "11-05-2026"
+  },
+  {
+    "word": "mejma",
+    "definition": "tomato",
+    "etymology": ["English", "tomayto, tomahto"],
+    "type": "noun",
+    "date": "11-05-2026"
+  },
+  {
+    "word": "maziro",
+    "definition": "delicious",
+    "etymology": ["Malagasy", "matsiro", "delicious"],
+    "type": "modifier",
+    "date": "11-05-2026"
+  },
+  {
+    "word": "dolob",
+    "definition": "mirror",
+    "etymology": false,
+    "type": "noun",
+    "date": "12-05-2026"
+  },
+  {
+    "word": "lamudire",
+    "definition": "to study",
+    "etymology": ["Hebrew", ["ללמוד", "lilmód"], "to study"],
+    "type": "verb",
+    "date": "13-05-2026"
+  },
+  {
+    "word": "pated",
+    "definition": "country",
+    "etymology": ["Lao", ["ປະເທດ", "pa thēt"], "country"],
+    "type": "noun",
+    "date": "13-05-2026"
+  },
+  {
+    "word": "tavi",
+    "definition": "head",
+    "etymology": ["Georgian", ["თავი", "tavi"], "head"],
+    "type": "noun",
+    "date": "14-05-2026"
+  },
+  {
+    "word": "waju",
+    "definition": "baby",
+    "etymology": ["Hawaiian", "waiū", "milk"],
+    "type": "noun",
+    "date": "14-05-2026"
+  },
+  {
+    "word": "balin",
+    "definition": "cold",
+    "etymology": ["Tagalog", "baling", "negative"],
+    "type": "modifier",
+    "date": "15-05-2026"
+  },
+  {
+    "word": "bodox",
+    "definition": "fool",
+    "etymology": ["Indonesian", "bodoh", "foolish"],
+    "type": "noun",
+    "date": "16-05-2026"
+  },
+  {
+    "word": "bimsy",
+    "definition": "loud",
+    "etymology": ["Hindi", ["भीमसरट", "bhīmsaraṭ"], "dinosaur"],
+    "type": "modifier",
+    "date": "16-05-2026"
+  },
+  {
+    "word": "lawfo",
+    "definition": "warm",
+    "etymology": ["German", "Lauffeuer", "wildfire"],
+    "type": "noun",
+    "date": "16-05-2026"
+  },
+  {
+    "word": "xadika",
+    "definition": "garden",
+    "etymology": ["Arabic", ["حديقة", "ḥadīqa"], "garden"],
+    "type": "noun",
+    "date": "17-05-2026"
+  },
+  {
+    "word": "ezhazere",
+    "definition": "to allow",
+    "etymology": ["Persian", ["اجازه", "ejâze"], "permission"],
+    "type": "verb",
+    "date": "17-05-2026"
+  },
+  {
+    "word": "idur",
+    "definition": "weak",
+    "etymology": ["Bengali", ["ইঁদুর", "īdur"], "mouse"],
+    "type": "modifier",
+    "date": "17-05-2026"
+  },
+  {
+    "word": "mazarire",
+    "definition": "to travel",
+    "etymology": ["Belarusian", ["мацярык", "macjaryk"], "continent"],
+    "type": "verb",
+    "date": "17-05-2026"
+  },
+  {
+    "word": "povjesere",
+    "definition": "to blow",
+    "etymology": ["Polish", "powietrze", "air"],
+    "type": "verb",
+    "date": "17-05-2026"
+  },
+  {
+    "word": "nowok",
+    "definition": "kernel",
+    "etymology": ["Thai", ["งอก", "ngɔ̂ɔk"], "to grow"],
+    "type": "noun",
+    "date": "17-05-2026"
+  },
+  {
+    "word": "kasaj",
+    "definition": "quiet",
+    "etymology": ["Latin", "cassae", "empty"],
+    "type": "modifier",
+    "date": "17-05-2026"
+  },
+  {
+    "word": "kusti",
+    "definition": "strong",
+    "etymology": ["Kazakh", ["күшті", "küştı"], "strong"],
+    "type": "modifier",
+    "date": "17-05-2026"
+  },
+  {
+    "word": "faum",
+    "definition": "gold",
+    "etymology": [
+      ["Batelu", "fem"],
+      ["Latin", "aurum", "gold"]
+    ],
+    "type": "noun",
+    "date": "18-05-2026"
+  },
+  {
+    "word": "tarkarkare",
+    "definition": "to argue",
+    "etymology": ["Bengali", ["তর্ক করা", "torko kôra"], "to argue"],
+    "type": "verb",
+    "date": "18-05-2026"
+  },
+  {
+    "word": "tabenire",
+    "definition": "to consider",
+    "etymology": ["Norwegian", "ta in betraktning", "to consider"],
+    "type": "verb",
+    "date": "18-05-2026"
+  },
+  {
+    "word": "tafit",
+    "definition": "field of science",
+    "etymology": ["Swahili", "utafiti", "research"],
+    "type": "noun",
+    "date": "19-05-2026"
+  },
+  {
+    "word": "jasyka",
+    "definition": "science",
+    "etymology": ["Ukrainian", ["пляшечка", "pljašečka"], "vial"],
+    "type": "noun",
+    "date": "19-05-2026"
+  },
+  {
+    "word": "bynire",
+    "definition": "to come",
+    "etymology": ["Kannada", ["ಬನ್ನಿ", "banni"], "to come"],
+    "type": "verb",
+    "date": "19-05-2026"
+  },
+  {
+    "word": "sinit",
+    "definition": "pretzel, bagel, donut",
+    "etymology": ["Turkish", "simit", "simit"],
+    "type": "noun",
+    "date": "20-05-2026"
+  },
+  {
+    "word": "olasitanur",
+    "definition": "headphones",
+    "etymology": [
+      ["Batelu", "olasi"],
+      ["Batelu", "tanur"]
+    ],
+    "type": "noun",
+    "date": "20-05-2026"
+  },
+  {
+    "word": "perdere",
+    "definition": "to purr (of a cat)",
+    "etymology": ["Macedonian", ["преде", "prede"], "to purr"],
+    "type": "verb",
+    "date": "20-05-2026"
+  },
+  {
+    "word": "nacoka",
+    "definition": "arrow (that indicates direction)",
+    "etymology": ["Macedonian", ["насока", "nasoka"], "direction"],
+    "type": "noun",
+    "date": "20-05-2026"
+  },
+  {
+    "word": "nimratafit",
+    "definition": "math",
+    "etymology": [
+      ["Batelu", "nimra"],
+      ["Batelu", "tafit"]
+    ],
+    "type": "noun",
+    "date": "20-05-2026"
   }
 ]

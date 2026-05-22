@@ -198,4 +198,7 @@ export const languagesToCountries = {
   "S'gaw Karen": ["mm", "th"],
   Khmer: ["kh"],
   Greenlandic: ["gl"],
+  Malagasy: ["mg"],
+  Belarusian: ["by"],
+  Kazakh: ["kz"],
 };
