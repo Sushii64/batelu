@@ -828,17 +828,17 @@
           </tr>
           <tr class="tr-bottom">
             <td class="horizontal-header"><b>Inanimate</b></td>
-            <td class="inflections-secondary">ni</td>
-            <td class="inflections-secondary">nimi</td>
-            <td class="inflections-secondary">cuni</td>
-            <td class="inflections-secondary">cunimi</td>
+            <td>ni</td>
+            <td>nimi</td>
+            <td>cuni</td>
+            <td>cunimi</td>
           </tr>
           <tr>
             <td colspan="2" class="horizontal-header"><b>Impersonal</b></td>
-            <td class="inflections-secondary">ypro</td>
-            <td class="inflections-secondary">ypromi</td>
-            <td class="inflections-secondary">culypro</td>
-            <td class="inflections-secondary">culypromi</td>
+            <td>ypro</td>
+            <td>ypromi</td>
+            <td>culypro</td>
+            <td>culypromi</td>
           </tr>
         </tbody>
       </table>
