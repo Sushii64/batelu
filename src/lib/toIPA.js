@@ -28,6 +28,14 @@ const VOWELS = {
   u: "u",
   y: "ə",
 };
+export const IPA_CONSONANTS = new Set([
+  ...Object.values(CONSONANTS),
+  ...Object.values(H_CONSONANTS).flatMap((hConsonant) => [
+    hConsonant.with,
+    hConsonant.without,
+  ]),
+]);
+export const IPA_VOWELS = new Set(Object.values(VOWELS));
 
 const toSounds = (word) => {
   const sounds = [];
@@ -76,21 +84,21 @@ export const toIPA = (word) => {
   if (sounds.error) {
     return sounds;
   }
-  let ipa = "";
+  const syllables = [[]];
   while (i < sounds.segments.length) {
     if (i !== 0) {
-      ipa += ".";
+      syllables.push([]);
     }
     switch (sounds.segments[i].type) {
       case "vowel":
         if (i === 0) {
-          ipa += sounds.segments[i].ipa;
+          syllables[syllables.length - 1].push(sounds.segments[i].ipa);
           i++;
           if (
             sounds.segments[i]?.type === "consonant" &&
             sounds.segments[i + 1]?.type !== "vowel"
           ) {
-            ipa += sounds.segments[i].ipa;
+            syllables[syllables.length - 1].push(sounds.segments[i].ipa);
             i++;
           }
         } else {
@@ -107,22 +115,28 @@ export const toIPA = (word) => {
             message: `Syllable starting with a consonant without a vowel afterwards (${sounds.segments[i].orth})`,
           };
         }
-        ipa += sounds.segments[i].ipa + sounds.segments[i + 1].ipa;
+        syllables[syllables.length - 1].push(sounds.segments[i].ipa);
+        syllables[syllables.length - 1].push(sounds.segments[i + 1].ipa);
         i += 2;
         if (
           sounds.segments[i]?.type === "consonant" &&
           sounds.segments[i + 1]?.type !== "vowel"
         ) {
-          ipa += sounds.segments[i].ipa;
+          syllables[syllables.length - 1].push(sounds.segments[i].ipa);
           i++;
         } else if (
           sounds.segments[i]?.type === "vowel" &&
           sounds.segments[i + 1]?.type === "consonant"
         ) {
-          ipa += sounds.segments[i].ipa + sounds.segments[i + 1].ipa;
+          syllables[syllables.length - 1].push(sounds.segments[i].ipa);
+          syllables[syllables.length - 1].push(sounds.segments[i + 1].ipa);
           i += 2;
         }
     }
   }
-  return { error: false, ipa };
+  return {
+    error: false,
+    ipa: syllables.map((syllable) => syllable.join("")).join("."),
+    syllables,
+  };
 };

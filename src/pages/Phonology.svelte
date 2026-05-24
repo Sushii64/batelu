@@ -1,14 +1,30 @@
 <script>
+  import { frequencyOf } from "../lib/words";
+
+  const frequency = (phoneme) => `${frequencyOf(phoneme) * 100}%`;
+  let showFrequency = false;
 </script>
 
-<main class="container">
+<main class="container" class:show-frequency={showFrequency}>
 	<h1>Phonology</h1>
 
 	<h2>Syllables</h2>
 	<p>Allowed syllable structures are CV, CVC, CVVC; and VC and V at the beginning of a word</p>
 	<p>The sound's spelling is indicated in brackets after the sound. If there are no brackets, the spelling is the same as the IPA symbol.</p>
 
-	<h2>Vowels</h2>
+	{#snippet phoneme(ipa, orthography)}
+     <td style:--frequency={frequency(ipa)}>
+       {orthography ?? ipa}
+     </td>
+	{/snippet}
+
+	<header>
+	  <h2>Vowels</h2>
+		<label>
+		  <input type="checkbox" bind:checked={showFrequency}>
+			Show frequencies
+		</label>
+	</header>
 	<table>
 		<thead>
 			<tr>
@@ -19,17 +35,17 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td>i</td>
-				<td>ə (y)</td>
-				<td>u</td>
+				{@render phoneme("i")}
+				{@render phoneme("ə", "ə (y)")}
+				{@render phoneme("u")}
 			</tr>
 			<tr>
-				<td>e</td>
+				{@render phoneme("e")}
 				<td></td>
-				<td>o</td>
+				{@render phoneme("o")}
 			</tr>
 			<tr>
-				<td>a</td>
+				{@render phoneme("a")}
 				<td></td>
 				<td></td>
 			</tr>
@@ -51,64 +67,64 @@
 		<tbody>
 			<tr>
 				<td><b>Nasal</b></td>
-				<td>m</td>
-				<td>n</td>
+				{@render phoneme("m")}
+				{@render phoneme("n")}
 				<td></td>
 				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td><b>Unvoiced plosive</b></td>
-				<td>p</td>
-				<td>t</td>
+				{@render phoneme("p")}
+				{@render phoneme("t")}
 				<td></td>
 				<td></td>
-				<td>k</td>
+				{@render phoneme("k")}
 			</tr>
 			<tr>
 				<td><b>Voiced plosive</b></td>
-				<td>b</td>
-				<td>d</td>
+				{@render phoneme("b")}
+				{@render phoneme("d")}
 				<td></td>
 				<td></td>
-				<td>ɡ (g)</td>
+				{@render phoneme("ɡ", "ɡ (g)")}
 			</tr>
 			<tr>
 				<td><b>Unvoiced affricate</b></td>
 				<td></td>
-				<td>t͡s (z)</td>
+				<td style:--frequency={frequency("t")}>t͡s (z)</td>
 				<td></td>
 				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td><b>Unvoiced fricative</b></td>
-				<td>f</td>
+				{@render phoneme("f")}
 				<td></td>
-				<td>ʃ (s)</td>
-				<td>ç (c)</td>
-				<td>x</td>
+				{@render phoneme("ʃ", "ʃ (s)")}
+				{@render phoneme("ç", "ç (c)")}
+				{@render phoneme("x")}
 			</tr>
 			<tr>
 				<td><b>Voiced fricative</b></td>
-				<td>v</td>
+				{@render phoneme("v")}
 				<td></td>
-				<td>ʒ (zh)</td>
+				{@render phoneme("ʒ", "ʒ (zh)")}
 				<td></td>
-				<td>ɣ (gh)</td>
+				{@render phoneme("ɣ", "ɣ (gh)")}
 			</tr>
 			<tr>
 				<td><b>Approximant</b></td>
-				<td>w</td>
-				<td>l</td>
+				{@render phoneme("w")}
+				{@render phoneme("l")}
 				<td></td>
-				<td>j</td>
-				<td>(w)</td>
+				{@render phoneme("j")}
+				{@render phoneme("w", "(w)")}
 			</tr>
 			<tr>
 				<td><b>Trill</b></td>
 				<td></td>
-				<td>r</td>
+				{@render phoneme("r")}
 				<td></td>
 				<td></td>
 				<td></td>
@@ -116,3 +132,14 @@
 		</tbody>
 	</table>
 </main>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  main.show-frequency td {
+    background-color: color-mix(var(--accent) calc(var(--frequency) * 0.5), transparent);
+  }
+</style>
