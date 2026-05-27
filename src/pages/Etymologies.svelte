@@ -18,7 +18,8 @@
     "Toki Pona",
     "Sanskrit",
     "Unnamed Conlang 3",
-    "Esperanto"
+    "Esperanto",
+    "Old Church Slavonic",
   ]);
   const missingLanguages = new Set();
   const countryAmounts = new Map();

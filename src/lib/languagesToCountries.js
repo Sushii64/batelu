@@ -201,4 +201,5 @@ export const languagesToCountries = {
   Malagasy: ["mg"],
   Belarusian: ["by"],
   Kazakh: ["kz"],
+  Tibetan: ["cn"],
 };

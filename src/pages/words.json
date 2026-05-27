@@ -2767,5 +2767,141 @@
     ],
     "type": "noun",
     "date": "20-05-2026"
+  },
+  {
+    "word": "natara",
+    "definition": "then",
+    "etymology": ["Kannada", ["ನಂತರ", "nantara"], "then"],
+    "type": "conjunction",
+    "date": "23-05-2026"
+  },
+  {
+    "word": "vezka",
+    "definition": "milk",
+    "etymology": ["Swedish", "vätska", "liquid"],
+    "type": "noun",
+    "date": "23-05-2026"
+  },
+  {
+    "word": "pias",
+    "definition": "goo, slime",
+    "etymology": ["Italian", "spiaccicare", "to squish"],
+    "type": "noun",
+    "date": "23-05-2026"
+  },
+  {
+    "word": "onoratafit",
+    "definition": "history",
+    "etymology": [
+      ["Batelu", "onore"],
+      ["Batelu", "tafit"]
+    ],
+    "type": "noun",
+    "date": "24-05-2026"
+  },
+  {
+    "word": "moto",
+    "definition": "more",
+    "etymology": ["Japanese", ["もっと", "motto"], "more"],
+    "type": "noun",
+    "date": "24-05-2026"
+  },
+  {
+    "word": "wa",
+    "definition": "about (topic)",
+    "etymology": ["Japanese", ["は", "wa"], "(topic marker)"],
+    "type": "adposition",
+    "date": "25-05-2026"
+  },
+  {
+    "word": "naraja",
+    "definition": "finally",
+    "etymology": ["Bulgarian", ["накрая", "nakraja"], "finally"],
+    "type": "modifier",
+    "date": "25-05-2026"
+  },
+  {
+    "word": "radosti",
+    "definition": "interesting",
+    "etymology": ["Old Church Slavonic", ["радость", "radostĭ"], "joy"],
+    "type": "modifier",
+    "date": "26-05-2026"
+  },
+  {
+    "word": "sighwen",
+    "definition": "frequently, often",
+    "etymology": ["Mandarin Chinese", ["習慣", "xíguàn"], "custom"],
+    "type": "modifier",
+    "date": "26-05-2026"
+  },
+  {
+    "word": "topakare",
+    "definition": "to boil (food)",
+    "etymology": ["Tibetan", ["ལྟོགས་པ", "ltogs pa"], "hungry"],
+    "type": "verb",
+    "date": "26-05-2026"
+  },
+  {
+    "word": "pokuz",
+    "definition": "attempt",
+    "etymology": ["Czech", "pokus", "attempt"],
+    "type": "noun",
+    "date": "26-05-2026"
+  },
+  {
+    "word": "irtere",
+    "definition": "to quit, to stop doing something",
+    "etymology": ["Basque", "irten", "to leave"],
+    "type": "noun",
+    "date": "26-05-2026"
+  },
+  {
+    "word": "wawejo",
+    "definition": "correct",
+    "etymology": ["Batelu", "wuwoji"],
+    "type": "modifier",
+    "date": "26-05-2026"
+  },
+  {
+    "word": "tekire",
+    "definition": "to write",
+    "etymology": ["Swedish", "anteckningsbok", "notebook"],
+    "type": "verb",
+    "date": "26-05-2026"
+  },
+  {
+    "word": "pawire",
+    "definition": "to use",
+    "etymology": ["Batelu", "pawi"],
+    "type": "verb",
+    "date": "26-05-2026"
+  },
+  {
+    "word": "obwalare",
+    "definition": "to lie",
+    "etymology": ["Baoule", "ato bualɛ", "to lie"],
+    "type": "verb",
+    "date": "27-05-2026"
+  },
+  {
+    "word": "tare",
+    "definition": "to carry",
+    "etymology": ["Georgian", ["ტარება", "ṭareba"], "carrying"],
+    "type": "verb",
+    "date": "27-05-2026"
+  },
+  {
+    "word": "zhituryre",
+    "definition": "to bake (food)",
+    "etymology": ["Romanian", "prăjitură", "cake"],
+    "type": "verb",
+    "date": "27-05-2026"
+  },
+  {
+    "word": "zonen",
+    "definition": "shade (shelter from the sun)",
+    "etymology": ["Hebrew", ["צונן", "tzonen"], "cool"],
+    "type": "noun",
+    "date": "27-05-2026"
   }
 ]
