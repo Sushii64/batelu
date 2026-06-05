@@ -202,4 +202,8 @@ export const languagesToCountries = {
   Belarusian: ["by"],
   Kazakh: ["kz"],
   Tibetan: ["cn"],
+  "Eastern Min": ["cn", "tw"],
+  "Southern Altai": ["ru"],
+  "Classical Nahuatl": ["mx"],
+  "Khiamniungan Naga": ["mm", "in"],
 };

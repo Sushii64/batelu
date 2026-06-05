@@ -20,6 +20,7 @@
     "Unnamed Conlang 3",
     "Esperanto",
     "Old Church Slavonic",
+    "Ottoman Turkish",
   ]);
   const missingLanguages = new Set();
   const countryAmounts = new Map();

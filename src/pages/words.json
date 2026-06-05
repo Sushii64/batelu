@@ -2903,5 +2903,154 @@
     "etymology": ["Hebrew", ["צונן", "tzonen"], "cool"],
     "type": "noun",
     "date": "27-05-2026"
+  },
+  {
+    "word": "meaxki",
+    "definition": "pillow",
+    "etymology": ["Russian", ["мягкий", "mjagkij"], "soft"],
+    "type": "noun",
+    "date": "28-05-2026"
+  },
+  {
+    "word": "bizha",
+    "definition": "plant (that doesn't bear fruit)",
+    "etymology": ["Kannada", ["ಬೀಜ", "bija"], "seed"],
+    "type": "noun",
+    "date": "28-05-2026"
+  },
+  {
+    "word": "mawyrzy",
+    "definition": "claw",
+    "etymology": [
+      ["Batelu", "mawyr"],
+      ["Batelu", "zy"]
+    ],
+    "type": "noun",
+    "date": "28-05-2026"
+  },
+  {
+    "word": "mali",
+    "definition": "cute",
+    "etymology": ["Eastern Min", ["貓狸", "mà-lì"], "cat"],
+    "type": "modifier",
+    "date": "28-05-2026"
+  },
+  {
+    "word": "gusti",
+    "definition": "tongue",
+    "etymology": ["Batelu", "gustire"],
+    "type": "noun",
+    "date": "28-05-2026"
+  },
+  {
+    "word": "kabris",
+    "definition": "fur",
+    "etymology": ["Southern Altai", ["кабырчак", "kabïrčak"], "shell"],
+    "type": "noun",
+    "date": "28-05-2026"
+  },
+  {
+    "word": "macunore",
+    "definition": "to fry",
+    "etymology": ["Tagalog", "masunog", "to burn"],
+    "type": "verb",
+    "date": "28-05-2026"
+  },
+  {
+    "word": "kazal",
+    "definition": "letter (of a word)",
+    "etymology": [
+      ["Batelu", "kata"],
+      ["Batelu", "zaluk"]
+    ],
+    "type": "noun",
+    "date": "28-05-2026"
+  },
+  {
+    "word": "luwyna",
+    "definition": "dream",
+    "etymology": [
+      ["Batelu", "luny"],
+      ["Batelu", "tuwana"]
+    ],
+    "type": "noun",
+    "date": "29-05-2026"
+  },
+  {
+    "word": "jorgunure",
+    "definition": "to lie (on the ground)",
+    "etymology": ["Ottoman Turkish", ["یورغون", "yor gun"], "fatigued"],
+    "type": "verb",
+    "date": "29-05-2026"
+  },
+  {
+    "word": "zhamesu",
+    "definition": "whisker",
+    "etymology": ["Polish", "zmysł", "sense"],
+    "type": "noun",
+    "date": "29-05-2026"
+  },
+  {
+    "word": "nawi",
+    "definition": "paw",
+    "etymology": ["Classical Nahuatl", "nahui", "four"],
+    "type": "noun",
+    "date": "29-05-2026"
+  },
+  {
+    "word": "silvy",
+    "definition": "face",
+    "etymology": ["Polish", "szczęśliwy", "happy"],
+    "type": "noun",
+    "date": "29-05-2026"
+  },
+  {
+    "word": "fynsy",
+    "definition": "nice, kind",
+    "etymology": ["Vietnamese", "phân chia", "to share"],
+    "type": "noun",
+    "date": "29-05-2026"
+  },
+  {
+    "word": "kavuij",
+    "definition": "off (of a device)",
+    "etymology": ["Hebrew", "כבוי", "(of fire) no longer alight"],
+    "type": "modifier",
+    "date": "29-05-2026"
+  },
+  {
+    "word": "pegun",
+    "definition": "gray",
+    "etymology": ["Korean", ["백은", "baegeun"], "silver"],
+    "type": "modifier",
+    "date": "30-05-2026"
+  },
+  {
+    "word": "gozal",
+    "definition": "violent",
+    "etymology": ["English", "go postal", "become aggressive"],
+    "type": "modifier",
+    "date": "30-05-2026"
+  },
+  {
+    "word": "guansu",
+    "definition": "portal",
+    "etymology": ["Mandarin Chinese", ["光速", "guāngsù"], "speed of light"],
+    "type": "noun",
+    "date": "31-05-2026"
+  },
+  {
+    "word": "monoj",
+    "definition": "chair",
+    "etymology": ["Khiamniungan Naga", "mòknòi", "to sit"],
+    "type": "noun",
+    "date": "31-05-2026"
+  },
+  {
+    "word": "ackurni",
+    "definition": "meat",
+    "etymology": ["Welsh", "asgwrn", "bone"],
+    "type": "noun",
+    "date": "01-06-2026"
   }
 ]
