@@ -3122,5 +3122,22 @@
     "etymology": ["Welsh", "asgwrn", "bone"],
     "type": "noun",
     "date": "01-06-2026"
+  },
+  {
+    "word": "ludinadija",
+    "definition": "birthday",
+    "etymology": [
+      ["Batelu", "ludina"],
+      ["Batelu", "dija"]
+    ],
+    "type": "noun",
+    "date": "05-06-2026"
+  },
+  {
+    "word": "kabuk",
+    "definition": "crust, outer layer",
+    "etymology": ["Turkish", "kabuk", "shell"],
+    "type": "noun",
+    "date": "06-06-2026"
   }
 ]
