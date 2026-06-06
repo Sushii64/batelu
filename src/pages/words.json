@@ -2769,6 +2769,76 @@
     "date": "20-05-2026"
   },
   {
+    "word": "rosimudija",
+    "definition": "Monday",
+    "etymology": [
+      ["Batelu", "rosimu"],
+      ["Batelu", "dija"]
+    ],
+    "type": "noun",
+    "date": "21-05-2026"
+  },
+  {
+    "word": "kamatandija",
+    "definition": "Tuesday",
+    "etymology": [
+      ["Batelu", "kamatan"],
+      ["Batelu", "dija"]
+    ],
+    "type": "noun",
+    "date": "21-05-2026"
+  },
+  {
+    "word": "kivancidija",
+    "definition": "Wednesday",
+    "etymology": [
+      ["Batelu", "kivanci"],
+      ["Batelu", "dija"]
+    ],
+    "type": "noun",
+    "date": "21-05-2026"
+  },
+  {
+    "word": "oblandija",
+    "definition": "Thursday",
+    "etymology": [
+      ["Batelu", "oblan"],
+      ["Batelu", "dija"]
+    ],
+    "type": "noun",
+    "date": "21-05-2026"
+  },
+  {
+    "word": "rinimdija",
+    "definition": "Friday",
+    "etymology": [
+      ["Batelu", "rinim"],
+      ["Batelu", "dija"]
+    ],
+    "type": "noun",
+    "date": "21-05-2026"
+  },
+  {
+    "word": "witreundija",
+    "definition": "Saturday",
+    "etymology": [
+      ["Batelu", "witreun"],
+      ["Batelu", "dija"]
+    ],
+    "type": "noun",
+    "date": "21-05-2026"
+  },
+  {
+    "word": "ghaghidija",
+    "definition": "Sunday",
+    "etymology": [
+      ["Batelu", "ghaghi"],
+      ["Batelu", "dija"]
+    ],
+    "type": "noun",
+    "date": "21-05-2026"
+  },
+  {
     "word": "natara",
     "definition": "then",
     "etymology": ["Kannada", ["ನಂತರ", "nantara"], "then"],
