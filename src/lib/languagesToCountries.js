@@ -206,4 +206,6 @@ export const languagesToCountries = {
   "Southern Altai": ["ru"],
   "Classical Nahuatl": ["mx"],
   "Khiamniungan Naga": ["mm", "in"],
+  Punjabi: ["in", "pk"],
+  Hausa: ["ng", "ne"],
 };

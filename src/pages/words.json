@@ -3139,5 +3139,47 @@
     "etymology": ["Turkish", "kabuk", "shell"],
     "type": "noun",
     "date": "06-06-2026"
+  },
+  {
+    "word": "turata",
+    "definition": "immediately",
+    "etymology": ["Punjabi", ["ਤੁਰੰਤ", "turata"], "immediately"],
+    "type": "modifier",
+    "date": "06-06-2026"
+  },
+  {
+    "word": "lokazi",
+    "definition": "long (of time)",
+    "etymology": ["Hausa", "lokaci", "time"],
+    "type": "modifier",
+    "date": "07-06-2026"
+  },
+  {
+    "word": "kaldyre",
+    "definition": "to remove",
+    "etymology": ["Turkish", "kaldırmak", "to remove"],
+    "type": "verb",
+    "date": "08-06-2026"
+  },
+  {
+    "word": "farasi",
+    "definition": "quick, fast",
+    "etymology": ["Swahili", "farasi", "horse"],
+    "type": "noun",
+    "date": "13-06-2026"
+  },
+  {
+    "word": "biljanty",
+    "definition": "diamond (playing card)",
+    "etymology": ["Russian", ["бриллианты", "brilliánty"], "diamonds"],
+    "type": "noun",
+    "date": "14-06-2026"
+  },
+  {
+    "word": "bulme",
+    "definition": "room",
+    "etymology": ["Kazakh", ["бөлме", "bölme"], "room"],
+    "type": "noun",
+    "date": "14-06-2026"
   }
 ]
