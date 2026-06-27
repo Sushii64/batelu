@@ -10,6 +10,7 @@
     import Inflections from './pages/Inflections.svelte';
     import Etymologies from './pages/Etymologies.svelte';
     import Tools from './pages/tools/Tools.svelte';
+    import AnkiTool from './pages/tools/Anki.svelte'
     import NumbersTool from './pages/tools/Numbers.svelte';
 
     /** @type {import("svelte").Component<{}> | import("svelte").Component<{ navigate: (path: string) => void }>} */
@@ -50,6 +51,10 @@
             
             case '/tools':
                 Component = Tools;
+                break;
+
+            case '/tools/anki':
+                Component = AnkiTool;
                 break;
             
             case '/tools/numbers':

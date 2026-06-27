@@ -9,6 +9,13 @@
     <li>
       <a
         href="/tools/numbers"
+        on:click|preventDefault={() => navigate("/tools/anki")}>ankipawi</a
+      >: Get Batelu words in a format you can import for use in
+      <a href="https://apps.ankiweb.net/">Anki</a>.
+    </li>
+    <li>
+      <a
+        href="/tools/numbers"
         on:click|preventDefault={() => navigate("/tools/numbers")}>nimrapawi</a
       >: Convert decimal numbers to Batelu.
     </li>
