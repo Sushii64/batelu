@@ -111,20 +111,20 @@
               {@const word = words.find((word) => word.word === etymology[1])}
               <li>
                 <span class="ety-lang">{etymology[0]}</span>
-                <em class="ety-word"
-                  ><a
-                    href={(() => {
-                      const url = new URL(location.href);
-                      url.searchParams.set("word", etymology[1]);
-                      return url.toString();
-                    })()}
-                    onclick={(e) => {
-                      e.preventDefault();
-                      open(word);
-                    }}>{etymology[1]}</a
-                  ></em
-                >
                 {#if word}
+                  <em class="ety-word"
+                    ><a
+                      href={(() => {
+                        const url = new URL(location.href);
+                        url.searchParams.set("word", etymology[1]);
+                        return url.toString();
+                      })()}
+                      onclick={(e) => {
+                        e.preventDefault();
+                        open(word);
+                      }}>{word.displayWord}</a
+                    ></em
+                  >
                   "<span class="ety-gloss"
                     >{word.definition.split(", ")[0]}</span
                   >"
@@ -132,7 +132,7 @@
                     {@render etymologyDescription(word.etymology)}
                   </ul>
                 {:else}
-                  <span class="ety-error">word not found</span>
+                  <span class="ety-error">word not found ({etymology[1]})</span>
                 {/if}
               </li>
             {:else}
