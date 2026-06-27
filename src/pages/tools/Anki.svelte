@@ -14,6 +14,10 @@
     <a href="https://apps.ankiweb.net/">Anki</a>.
   </p>
   <p>
+    Note: This isn't perfect. For example, deleted or changed words probably
+    aren't handled as they should be (yet).
+  </p>
+  <p>
     <a href={blobURL} download="batelu-anki.tsv"
       >Click here to download the file.</a
     >
