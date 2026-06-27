@@ -85,7 +85,11 @@
   };
 
   let specificWordTypes = new Set();
-  $: normalized = q.trim().toLowerCase();
+  $: normalized = q
+    .trim()
+    .toLowerCase()
+    .replace(/zh/g, "ž")
+    .replace(/gh/g, "ǧ");
   $: filtered = words.filter(
     (w) =>
       (specificWordTypes.size === 0 || specificWordTypes.has(w.type)) &&
@@ -425,8 +429,11 @@
 
     border: 1px solid var(--border);
     border-radius: 14px;
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 40%),
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.03),
+        transparent 40%
+      ),
       #101010;
     padding: 0.8rem 0.9rem;
 

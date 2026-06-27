@@ -1,7 +1,8 @@
 import wordsData from "../pages/words.json";
 import { IPA_CONSONANTS, IPA_VOWELS, toIPA } from "./toIPA";
 
-const cleanWord = (w) => w.replace(/\d+$/, "");
+const cleanWord = (w) =>
+  w.replace(/\d+$/, "").replace(/zh/g, "ž").replace(/gh/g, "ǧ");
 
 export const words = wordsData.map((w, index) => {
   const displayWord = cleanWord(w.word);

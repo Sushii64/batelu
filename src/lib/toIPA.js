@@ -6,6 +6,10 @@ const CONSONANTS = {
   k: "k",
   b: "b",
   d: "d",
+  g: "ɡ",
+  ǧ: "ɣ",
+  z: "t͡s",
+  ž: "ʒ",
   f: "f",
   s: "ʃ",
   c: "ç",
@@ -16,10 +20,6 @@ const CONSONANTS = {
   j: "j",
   r: "r",
 };
-const H_CONSONANTS = {
-  z: { without: "t͡s", with: "ʒ" },
-  g: { without: "ɡ", with: "ɣ" },
-};
 const VOWELS = {
   a: "a",
   e: "e",
@@ -28,13 +28,7 @@ const VOWELS = {
   u: "u",
   y: "ə",
 };
-export const IPA_CONSONANTS = new Set([
-  ...Object.values(CONSONANTS),
-  ...Object.values(H_CONSONANTS).flatMap((hConsonant) => [
-    hConsonant.with,
-    hConsonant.without,
-  ]),
-]);
+export const IPA_CONSONANTS = new Set([...Object.values(CONSONANTS)]);
 export const IPA_VOWELS = new Set(Object.values(VOWELS));
 
 const toSounds = (word) => {
@@ -48,22 +42,6 @@ const toSounds = (word) => {
         ipa: CONSONANTS[word[i]],
       });
       i++;
-    } else if (Object.hasOwn(H_CONSONANTS, word[i])) {
-      if (word[i + 1] === "h") {
-        sounds.push({
-          type: "consonant",
-          orth: word[i] + "h",
-          ipa: H_CONSONANTS[word[i]].with,
-        });
-        i += 2;
-      } else {
-        sounds.push({
-          type: "consonant",
-          orth: word[i],
-          ipa: H_CONSONANTS[word[i]].without,
-        });
-        i++;
-      }
     } else if (Object.hasOwn(VOWELS, word[i])) {
       sounds.push({
         type: "vowel",
