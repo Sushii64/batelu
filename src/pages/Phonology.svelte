@@ -109,9 +109,9 @@
 				<td><b>Voiced fricative</b></td>
 				{@render phoneme("v")}
 				<td></td>
-				{@render phoneme("ʒ", "ʒ (zh)")}
+				{@render phoneme("ʒ", "ʒ (ž or zh)")}
 				<td></td>
-				{@render phoneme("ɣ", "ɣ (gh)")}
+				{@render phoneme("ɣ", "ɣ (ǧ or gh)")}
 			</tr>
 			<tr>
 				<td><b>Approximant</b></td>
