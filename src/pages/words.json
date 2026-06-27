@@ -3181,5 +3181,123 @@
     "etymology": ["Kazakh", ["бөлме", "bölme"], "room"],
     "type": "noun",
     "date": "14-06-2026"
+  },
+  {
+    "word": "kabanbulme",
+    "definition": "bedroom",
+    "etymology": [
+      ["Batelu", "kaban"],
+      ["Batelu", "bulme"]
+    ],
+    "type": "noun",
+    "date": "15-06-2026"
+  },
+  {
+    "word": "xirad",
+    "definition": "owl",
+    "etymology": ["Persian", ["خردمند", "xiradmand"], "wise"],
+    "type": "noun",
+    "date": "16-06-2026"
+  },
+  {
+    "word": "misran",
+    "definition": "alchemy",
+    "etymology": ["Hindi", ["मिश्रण", "miśraṇ"], "mixture"],
+    "type": "noun",
+    "date": "19-06-2026"
+  },
+  {
+    "word": "sosoj",
+    "definition": "rabbit, hare",
+    "etymology": ["Romani", "śośoj", "rabbit"],
+    "type": "noun",
+    "date": "19-06-2026"
+  },
+  {
+    "word": "sixirwa",
+    "definition": "sword",
+    "etymology": ["Georgian", ["სისხლისღვრა", "sisxlisyvra"], "bloodshed"],
+    "type": "noun",
+    "date": "19-06-2026"
+  },
+  {
+    "word": "dimitra",
+    "definition": "Ceres (dwarf planet)",
+    "etymology": ["Greek", ["Δήμητρα", "Dímitra"], "Ceres"],
+    "type": "noun",
+    "date": "21-06-2026"
+  },
+  {
+    "word": "xirwi",
+    "definition": "bone",
+    "etymology": ["Finnish", "hirviö", "monster"],
+    "type": "noun",
+    "date": "22-06-2026"
+  },
+  {
+    "word": "etemen",
+    "definition": "neck",
+    "etymology": ["Yiddish", ["עטעמען", "etemen"], "to breathe"],
+    "type": "noun",
+    "date": "22-06-2026"
+  },
+  {
+    "word": "matala",
+    "definition": "knee",
+    "etymology": ["Ingrian", "matala", "low"],
+    "type": "noun",
+    "date": "22-06-2026"
+  },
+  {
+    "word": "guli",
+    "definition": "chest",
+    "etymology": ["Georgian", ["გული", "guli"], "heart"],
+    "type": "noun",
+    "date": "22-06-2026"
+  },
+  {
+    "word": "izhletes",
+    "definition": "stomach",
+    "etymology": ["Hungarian", "ízletes", "delicious"],
+    "type": "noun",
+    "date": "22-06-2026"
+  },
+  {
+    "word": "ifigho",
+    "definition": "cheek",
+    "etymology": ["Irish", "faoi dhó", "twice"],
+    "type": "noun",
+    "date": "22-06-2026"
+  },
+  {
+    "word": "usagi",
+    "definition": "carrot",
+    "etymology": ["Japanese", ["兎", "usagi"], "rabbit"],
+    "type": "noun",
+    "date": "23-06-2026"
+  },
+  {
+    "word": "kyzhamy",
+    "definition": "potato",
+    "etymology": ["Turkish", "patates kızartması", "fries"],
+    "type": "noun",
+    "date": "23-06-2026"
+  },
+  {
+    "word": "ludenba",
+    "definition": "body",
+    "etymology": [
+      ["Batelu", "ludina"],
+      ["Kazakh", ["бәден", "bäden"], "torso"]
+    ],
+    "type": "noun",
+    "date": "23-06-2026"
+  },
+  {
+    "word": "voligar",
+    "definition": "creative",
+    "etymology": ["Spanish", "bolígrafo", "ballpoint pen"],
+    "type": "modifier",
+    "date": "25-06-2026"
   }
 ]
