@@ -3299,5 +3299,78 @@
     "etymology": ["Spanish", "bolígrafo", "ballpoint pen"],
     "type": "modifier",
     "date": "25-06-2026"
+  },
+  {
+    "word": "xeapme",
+    "definition": "bat (animal)",
+    "etymology": ["Northern Sami", "čalmmeheapme", "blind"],
+    "type": "noun",
+    "date": "28-06-2026"
+  },
+  {
+    "word": "maca",
+    "definition": "leader, host",
+    "etymology": ["English", "emcee"],
+    "type": "noun",
+    "date": "30-06-2026"
+  },
+  {
+    "word": "uzwel",
+    "definition": "yesterday",
+    "etymology": ["Georgian", ["უძველესი", "uʒvelesi"], "ancient"],
+    "type": "modifier",
+    "date": "30-06-2026"
+  },
+  {
+    "word": "asulna",
+    "definition": "hyperlink",
+    "etymology": [
+      ["Batelu", "asul"],
+      ["Batelu", "na"]
+    ],
+    "type": "noun",
+    "date": "30-06-2026"
+  },
+  {
+    "word": "kinjure",
+    "definition": "to hunt",
+    "etymology": ["Yoruba", "kiniun", "lion"],
+    "type": "verb",
+    "date": "03-07-2026"
+  },
+  {
+    "word": "kajali",
+    "definition": "tomorrow",
+    "etymology": ["Arabic", ["خيال علمي", "ḵayāl ʕilmiyy"], "science fiction"],
+    "type": "modifier",
+    "date": "03-07-2026"
+  },
+  {
+    "word": "foriru",
+    "definition": "fence",
+    "etymology": ["Esperanto", "foriru!", "go away!"],
+    "type": "noun",
+    "date": "03-07-2026"
+  },
+  {
+    "word": "fyspet",
+    "definition": "train",
+    "etymology": ["German", "verspätet", "late"],
+    "type": "noun",
+    "date": "05-07-2026"
+  },
+  {
+    "word": "xipsu",
+    "definition": "bee",
+    "etymology": ["Manchu", ["ᡥᡳᠪᠰᡠ", "hibsu"], "honey"],
+    "type": "noun",
+    "date": "06-07-2026"
+  },
+  {
+    "word": "poroky",
+    "definition": "juice",
+    "etymology": ["Romanian", "portocală", "orange"],
+    "type": "noun",
+    "date": "09-07-2026"
   }
 ]
