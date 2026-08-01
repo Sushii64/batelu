@@ -3372,5 +3372,155 @@
     "etymology": ["Romanian", "portocală", "orange"],
     "type": "noun",
     "date": "09-07-2026"
+  },
+  {
+    "word": "kyit",
+    "definition": "salt",
+    "etymology": ["Pawnee", "kaʼit", "salt"],
+    "type": "noun",
+    "date": "11-07-2026"
+  },
+  {
+    "word": "asawa",
+    "definition": "sand",
+    "etymology": ["Amharic", ["አሸዋ", "ʾašäwa"], "sand"],
+    "type": "noun",
+    "date": "11-07-2026"
+  },
+  {
+    "word": "žarona",
+    "definition": "flower",
+    "etymology": false,
+    "type": "noun",
+    "date": "12-07-2026"
+  },
+  {
+    "word": "atrava",
+    "definition": "grass",
+    "etymology": ["Ukrainian", ["трава", "trava"], "grass"],
+    "type": "noun",
+    "date": "14-07-2026"
+  },
+  {
+    "word": "wuc",
+    "definition": "rainbow",
+    "etymology": ["Polish", "łuk", "arch"],
+    "type": "noun",
+    "date": "15-07-2026"
+  },
+  {
+    "word": "kikokiko",
+    "definition": "click (sound)",
+    "etymology": false,
+    "type": "noun",
+    "date": "22-07-2026"
+  },
+  {
+    "word": "apylzhek",
+    "definition": "alcohol, alcoholic drink",
+    "etymology": ["English", "applejack"],
+    "type": "noun",
+    "date": "27-07-2026"
+  },
+  {
+    "word": "kutradare",
+    "definition": "to lie, trick, deceive, mislead",
+    "etymology": ["English", "cute fraud"],
+    "type": "verb",
+    "date": "27-07-2026"
+  },
+  {
+    "word": "sif",
+    "definition": "if",
+    "etymology": ["VötGil", "Cif", "if"],
+    "type": "conjunction",
+    "date": "28-07-2026"
+  },
+  {
+    "word": "livalo",
+    "definition": "reference, citation, excerpt, quote",
+    "etymology": [
+      ["Batelu", "liv"],
+      ["Batelu", "al"],
+      ["Batelu", "alo"]
+    ],
+    "type": "noun",
+    "date": "28-07-2026"
+  },
+  {
+    "word": "malkip",
+    "definition": "gem, jewel",
+    "etymology": [
+      ["Batelu", "mali"],
+      ["Batelu", "kip"]
+    ],
+    "type": "noun",
+    "date": "28-07-2026"
+  },
+  {
+    "word": "likaje",
+    "definition": "excited, looking forward (to something)",
+    "etymology": ["ǃXóõ", "ǁqʻàẽ", "to smile"],
+    "type": "modifier",
+    "date": "28-07-2026"
+  },
+  {
+    "word": "ghurfe",
+    "definition": "pony",
+    "etymology": ["Arabic", ["عرف", "ʔurf"], "mane"],
+    "type": "noun",
+    "date": "28-07-2026"
+  },
+  {
+    "word": "kalijoz",
+    "definition": "religion, (religious) faith, creed",
+    "etymology": [
+      ["Batelu", "kaliboon"],
+      ["Batelu", "jozire"]
+    ],
+    "type": "noun",
+    "date": "28-07-2026"
+  },
+  {
+    "word": "talapetla",
+    "definition": "lightning",
+    "etymology": ["Nahuatl", ["tlapetlantli"], "lightning"],
+    "type": "noun",
+    "date": "30-07-2026"
+  },
+  {
+    "word": "orvos",
+    "definition": "doctor, medic",
+    "etymology": ["Hungarian", "orvos", "doctor"],
+    "type": "noun",
+    "date": "30-07-2026"
+  },
+  {
+    "word": "saxab",
+    "definition": "cloud",
+    "etymology": ["Arabic", ["سحاب", "saḥāb"], "clouds"],
+    "type": "noun",
+    "date": "30-07-2026"
+  },
+  {
+    "word": "jarraman",
+    "definition": "horse, knight (chess)",
+    "etymology": ["Gamilaraay", "yarraaman", "horse"],
+    "type": "noun",
+    "date": "30-07-2026"
+  },
+  {
+    "word": "waraka",
+    "definition": "spades (playing card suit)",
+    "etymology": ["Arabic", ["ورقة", "waraqa"], "leaf"],
+    "type": "noun",
+    "date": "01-08-2026"
+  },
+  {
+    "word": "pylowy",
+    "definition": "waterfall",
+    "etymology": ["Romanian", "plouă", "it rains"],
+    "type": "noun",
+    "date": "01-08-2026"
   }
 ]

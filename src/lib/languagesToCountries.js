@@ -232,4 +232,8 @@ export const languagesToCountries = {
   Ingrian: ["ru"],
   "Northern Sami": ["no"],
   Manchu: ["cn"],
+  Pawnee: ["us"],
+  ǃXóõ: ["bw", "na"],
+  Nahuatl: ["mx"],
+  Gamilaraay: ["au"],
 };

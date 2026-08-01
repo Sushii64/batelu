@@ -21,6 +21,7 @@
     "Esperanto",
     "Old Church Slavonic",
     "Ottoman Turkish",
+    "VötGil",
   ]);
   const missingLanguages = new Set();
   const countryAmounts = new Map();
