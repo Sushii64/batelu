@@ -3522,5 +3522,73 @@
     "etymology": ["Romanian", "plouă", "it rains"],
     "type": "noun",
     "date": "01-08-2026"
+  },
+  {
+    "word": "atefar",
+    "definition": "forest, woods",
+    "etymology": ["Maori", "atewharowharo", "lung"],
+    "type": "noun",
+    "date": "03-08-2026"
+  },
+  {
+    "word": "xaxus",
+    "definition": "city, town",
+    "etymology": ["Faroese", "háhús", "skyscraper"],
+    "type": "noun",
+    "date": "04-08-2026"
+  },
+  {
+    "word": "ikaz",
+    "definition": "coal, charcoal",
+    "etymology": ["Basque", "ikatz", "coal"],
+    "type": "noun",
+    "date": "05-08-2026"
+  },
+  {
+    "word": "kampali",
+    "definition": "not inhabited by humans, taken over by nature",
+    "etymology": ["Tamil", ["கம்பளிப்பூச்சி", "kampaḷippūcci"], "caterpillar"],
+    "type": "modifier",
+    "date": "05-08-2026"
+  },
+  {
+    "word": "kytigy",
+    "definition": "one third",
+    "etymology": ["Malay", "ketiga", "one third"],
+    "type": "noun",
+    "date": "05-08-2026",
+    "usage": "Used instead of *sanji-."
+  },
+  {
+    "word": "polan",
+    "definition": "lake",
+    "etymology": ["Mandarin Chinese", ["波浪", "bōlàng"], "wave"],
+    "type": "noun",
+    "date": "05-08-2026"
+  },
+  {
+    "word": "gomba",
+    "definition": "mushroom, fungus",
+    "etymology": ["Hungarian", "gomba", "mushroom"],
+    "type": "noun",
+    "date": "05-08-2026"
+  },
+  {
+    "word": "ji",
+    "definition": "one ...th, (fraction marker)",
+    "etymology": ["Russian", ["-ый", "yj"], "-th"],
+    "type": "noun",
+    "date": "06-08-2026",
+    "usage": "Only used as a compound between a number and a noun, for example \"dojiguwa\" (half a circle). *sanji- is not used, see kytigy."
+  },
+  {
+    "word": "woboj",
+    "definition": "sea, ocean",
+    "etymology": [
+      ["Batelu", "wabi"],
+      ["Batelu", "soj"]
+    ],
+    "type": "noun",
+    "date": "06-08-2026"
   }
 ]
