@@ -236,4 +236,5 @@ export const languagesToCountries = {
   ǃXóõ: ["bw", "na"],
   Nahuatl: ["mx"],
   Gamilaraay: ["au"],
+  "N'Ko": ["gn", "gw", "ml", "ci", "bf"],
 };

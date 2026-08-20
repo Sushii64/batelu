@@ -3590,5 +3590,40 @@
     ],
     "type": "noun",
     "date": "06-08-2026"
+  },
+  {
+    "word": "kuzhus",
+    "definition": "ruins",
+    "etymology": ["Japanese", ["崩す", "kuzusu"], "to destroy"],
+    "type": "noun",
+    "date": "07-08-2026"
+  },
+  {
+    "word": "gyrja",
+    "definition": "turtle, tortoise",
+    "etymology": ["Korean", ["그리다", "geurida"], "to draw"],
+    "type": "noun",
+    "date": "09-08-2026"
+  },
+  {
+    "word": "tedzha",
+    "definition": "colorful, rainbow (colored)",
+    "etymology": ["Malay", "teja", "rainbow"],
+    "type": "modifier",
+    "date": "13-08-2026"
+  },
+  {
+    "word": "kughur",
+    "definition": "chicken, rooster",
+    "etymology": ["Greek", ["κουκουρίκου", "koukouríkou"], "cock-a-doodle-doo"],
+    "type": "noun",
+    "date": "16-08-2026"
+  },
+  {
+    "word": "mizi",
+    "definition": "cow, ox",
+    "etymology": ["N'Ko", ["ߡߌ߬ߛߌ", "misi"], "cow"],
+    "type": "noun",
+    "date": "17-08-2026"
   }
 ]
