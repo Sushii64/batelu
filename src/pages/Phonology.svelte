@@ -36,7 +36,7 @@
 		<tbody>
 			<tr>
 				{@render phoneme("i")}
-        {@render phoneme("y (u)")}
+        {@render phoneme("y", "y (u)")}
 				<td></td>
         <td></td>
 			</tr>
