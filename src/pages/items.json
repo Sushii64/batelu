@@ -69,6 +69,6 @@
   { "description": "Sentences may optionally be capitalized", "tags": ["orthography"]},
   { "description": "Time is expressed as cubun H cubun M cusego S, with each part being optional", "tags": ["words"]},
   { "description": "The number zero goes with the singular", "tags": ["grammar", "words"]},
-  { "description": "Particles before the nouns for non-SVO word orders", "tags": ["grammar", "words", "word order"]},
+  { "description": "Particles before the nouns for non-SOV word orders", "tags": ["grammar", "words", "word order"]},
   { "description": "The question particle 'ko' is always included on questions", "tags": ["grammar", "words"]}
 ]
