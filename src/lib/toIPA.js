@@ -25,7 +25,7 @@ const VOWELS = {
   e: "e",
   i: "i",
   o: "o",
-  u: "u",
+  u: "y",
   y: "ə",
 };
 export const IPA_CONSONANTS = new Set([...Object.values(CONSONANTS)]);

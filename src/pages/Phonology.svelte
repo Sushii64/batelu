@@ -28,7 +28,7 @@
 	<table>
 		<thead>
 			<tr>
-				<th>Front</th>
+				<th colspan="2">Front</th>
 				<th>Central</th>
 				<th>Back</th>
 			</tr>
@@ -36,16 +36,19 @@
 		<tbody>
 			<tr>
 				{@render phoneme("i")}
-				{@render phoneme("ə", "ə (y)")}
-				{@render phoneme("u")}
+        {@render phoneme("y (u)")}
+				<td></td>
+        <td></td>
 			</tr>
 			<tr>
 				{@render phoneme("e")}
-				<td></td>
+        <td></td>
+				{@render phoneme("ə", "ə (y)")}
 				{@render phoneme("o")}
 			</tr>
 			<tr>
 				{@render phoneme("a")}
+        <td></td>
 				<td></td>
 				<td></td>
 			</tr>
