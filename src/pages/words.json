@@ -1339,7 +1339,7 @@
   {
     "word": "asul",
     "definition": "blue",
-    "etymology": ["Spanish", ["azul"], "blue"],
+    "etymology": ["Spanish", "azul", "blue"],
     "type": "modifier",
     "date": "09-04-2026"
   },
@@ -3484,7 +3484,7 @@
   {
     "word": "talapetla",
     "definition": "lightning",
-    "etymology": ["Nahuatl", ["tlapetlantli"], "lightning"],
+    "etymology": ["Nahuatl", "tlapetlantli", "lightning"],
     "type": "noun",
     "date": "30-07-2026"
   },
